@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>INTERE BUSINESS DEVELOPMENT LIMITED — Electronics and IT Equipment Trading</title>
+<meta name="description" content="Hong Kong-based company supplying electronics, computer equipment, audio-video systems, and digital devices to international customers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#F2F2F0;color:#15302F;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:#15302F;text-decoration-color:#1F8A8A;text-underline-offset:5px}
+a:hover{color:#15302F;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid #1F8A8A;outline-offset:3px}
+::placeholder{color:#15302F;opacity:.72}
+
+#nav-cta{opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
+#nav-cta[data-shown="true"]{opacity:1;visibility:visible;transform:none;transition:opacity .2s ease,transform .2s ease,visibility 0s}
+#nav-bar{border-bottom:1px solid transparent;transition:border-color .2s ease}
+#nav-bar[data-stuck="true"]{border-bottom-color:#B9C6C4}
+[id]{scroll-margin-top:88px}
+form [id]{scroll-margin-top:136px}
+body>div,.sc-host{height:auto !important}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+[data-slot="bay-computer"]{background:#DDE3E1 url(images/bay-computer.webp) center/cover no-repeat !important}
+[data-slot="bay-electronics"]{background:#DDE3E1 url(images/bay-electronics.webp) center/cover no-repeat !important}
+[data-slot="bay-av"]{background:#DDE3E1 url(images/bay-av.webp) center/cover no-repeat !important}
+[data-slot="bay-components"]{background:#DDE3E1 url(images/bay-components.webp) center/cover no-repeat !important}
+[data-slot="band"]{background:#DDE3E1 url(images/band.webp) center/cover no-repeat !important}
+</style>
+</helmet>
+
+<header id="top" data-screen-label="Header" style="position:sticky;top:-36px;z-index:10">
+  <div style="height:36px;display:flex;align-items:center;padding:0 64px;background:#DDE3E1;font-size:16px;line-height:24px;font-weight:500">Hong Kong</div>
+  <div id="nav-bar" data-stuck="{{ navShown }}" style="min-height:76px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 40px;padding:12px 64px;background:#F2F2F0">
+    <a href="#top" style="display:block;text-decoration:none"><img src="brand/logo-ink.svg" alt="INTERE" width="147" height="28" style="display:block;width:147px;height:28px"></a>
+    <nav aria-label="Main" style="margin-left:auto">
+      <ul style="display:flex;flex-wrap:wrap;gap:8px 36px;list-style:none;padding:0">
+        <li><a href="#main-areas" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Equipment</a></li>
+        <li><a href="#about" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">About Us</a></li>
+        <li><a href="#how-we-work" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Process</a></li>
+        <li><a href="#advantages" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Why Intere</a></li>
+      </ul>
+    </nav>
+    <a id="nav-cta" data-shown="{{ navShown }}" href="#contact" style="display:inline-flex;align-items:center;height:46px;padding:0 22px;background:#15302F;color:#F2F2F0;font-size:16px;font-weight:600;text-decoration:none;border-bottom:3px solid #1F8A8A;border-radius:2px">Contact Us</a>
+  </div>
+</header>
+
+<main>
+  <div id="main-areas" data-screen-label="Hero and showroom">
+    <div style="display:grid;grid-template-columns:minmax(320px,600px) minmax(0,1fr);grid-template-rows:auto auto;column-gap:8px">
+      <section aria-labelledby="hero-h" data-screen-label="Hero" style="grid-column:1;grid-row:1;display:flex;flex-direction:column;align-items:flex-start;padding:64px 48px 40px 64px">
+        <h1 id="hero-h" style="font-size:61px;line-height:58px;font-weight:700;letter-spacing:-0.035em;text-wrap:balance">Supplier of electronics and digital solutions for businesses</h1>
+        <p style="margin-top:28px;max-width:44ch;font-size:20px;line-height:30px;text-wrap:pretty">We provide companies with computer equipment, electronics, and components to support their efficient operations and growth.</p>
+        <a id="hero-cta" href="#contact" style="margin-top:36px;display:inline-flex;align-items:center;height:52px;padding:0 24px;background:#15302F;color:#F2F2F0;font-size:16px;font-weight:600;text-decoration:none;border-bottom:3px solid #1F8A8A;border-radius:2px">Contact Us</a>
+      </section>
+      <h2 id="areas-h" style="grid-column:1;grid-row:2;padding:24px 48px 40px 64px;font-size:31px;line-height:36px;font-weight:600;letter-spacing:-0.02em">Equipment Categories</h2>
+      <article id="bay-computer" onMouseEnter="{{ enter0 }}" onMouseLeave="{{ leave }}" style="grid-column:2;grid-row:1 / span 2;display:grid;grid-template-rows:subgrid">
+        <figure style="position:relative;overflow:hidden;aspect-ratio:3 / 2;background:#DDE3E1">
+          <div data-slot="bay-computer" role="img" aria-label="Three closed laptops stacked beside an office monitor, keyboard, mouse and a coiled teal cable on an oak table" style="position:absolute;inset:-10px;background:#DDE3E1;transform:{{ t0 }};transition:transform 0.5s cubic-bezier(0.2,0.6,0.2,1)"></div>
+        </figure>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:24px 64px 40px 32px">
+          <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Computer Equipment</h3>
+          <p style="font-size:16px;line-height:24px;max-width:44ch;color:#46605D">Supply of desktop computers, laptops, and peripherals.</p>
+        </div>
+      </article>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:8px">
+      <article id="bay-electronics" onMouseEnter="{{ enter1 }}" onMouseLeave="{{ leave }}" style="flex:448 1 0;min-width:300px;display:flex;flex-direction:column">
+        <figure style="position:relative;overflow:hidden;aspect-ratio:448 / 400;background:#DDE3E1">
+          <div data-slot="bay-electronics" role="img" aria-label="A white office printer with a router, a tablet and a compact label printer on an oak table" style="position:absolute;inset:-10px;background:#DDE3E1;transform:{{ t1 }};transition:transform 0.5s cubic-bezier(0.2,0.6,0.2,1)"></div>
+        </figure>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:24px 32px 40px 64px">
+          <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Electronics</h3>
+          <p style="font-size:16px;line-height:24px;max-width:44ch;color:#46605D">A wide range of devices for business and everyday use.</p>
+        </div>
+      </article>
+      <article id="bay-av" onMouseEnter="{{ enter2 }}" onMouseLeave="{{ leave }}" style="flex:640 1 0;min-width:300px;display:flex;flex-direction:column">
+        <figure style="position:relative;overflow:hidden;aspect-ratio:640 / 400;background:#DDE3E1">
+          <div data-slot="bay-av" role="img" aria-label="A conference camera bar, a round speakerphone and a gooseneck microphone with a coiled cable on an oak table" style="position:absolute;inset:-10px;background:#DDE3E1;transform:{{ t2 }};transition:transform 0.5s cubic-bezier(0.2,0.6,0.2,1)"></div>
+        </figure>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:24px 32px 40px 32px">
+          <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Audio and Video Equipment</h3>
+          <p style="font-size:16px;line-height:24px;max-width:44ch;color:#46605D">Equipment for communications, presentations, and multimedia tasks.</p>
+        </div>
+      </article>
+      <article id="bay-components" onMouseEnter="{{ enter3 }}" onMouseLeave="{{ leave }}" style="flex:336 1 0;min-width:300px;display:flex;flex-direction:column">
+        <figure style="position:relative;overflow:hidden;aspect-ratio:336 / 400;background:#DDE3E1">
+          <div data-slot="bay-components" role="img" aria-label="Flat lay of solid state drives, memory modules, a power adapter, a portable drive and three coiled cables on oak" style="position:absolute;inset:-10px;background:#DDE3E1;transform:{{ t3 }};transition:transform 0.5s cubic-bezier(0.2,0.6,0.2,1)"></div>
+        </figure>
+        <div style="display:flex;flex-direction:column;gap:8px;padding:24px 64px 40px 32px">
+          <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Components and Accessories</h3>
+          <p style="font-size:16px;line-height:24px;max-width:44ch;color:#46605D">Supply of parts, accessories, and related products.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <section id="about" aria-labelledby="about-h" data-screen-label="About note" style="padding:72px 64px 128px">
+    <div style="max-width:720px;display:flex;flex-direction:column;gap:20px">
+      <h2 id="about-h" style="margin-bottom:8px;font-size:31px;line-height:36px;font-weight:700;letter-spacing:0.01em">INTERE BUSINESS<br>DEVELOPMENT LIMITED</h2>
+      <p style="font-size:20px;line-height:30px;text-wrap:pretty">Is a Hong Kong-registered company specializing in the supply of electronics, computer equipment, and digital devices.</p>
+      <p style="font-size:20px;line-height:30px;text-wrap:pretty">We work with international suppliers and provide our customers with a wide range of products—from basic solutions to specialized equipment.</p>
+      <p style="font-size:20px;line-height:30px;text-wrap:pretty">Our primary focus is on reliable supply, a flexible approach to our customers’ needs, and building long-term business relationships.</p>
+    </div>
+  </section>
+
+  <section id="how-we-work" aria-labelledby="how-h" data-screen-label="How an Order Comes Together" style="background:#DDE3E1;padding:112px 64px 120px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:64px">
+    <div style="flex:1 1 440px;max-width:560px">
+      <h2 id="how-h" style="font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em;margin-bottom:40px;text-wrap:balance">How an Order Comes Together</h2>
+      <ol style="list-style:none;padding:0">
+        <li style="display:grid;grid-template-columns:64px minmax(0,1fr);padding:0 0 36px">
+          <span aria-hidden="true" style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">01</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Request</h3>
+            <p style="font-size:20px;line-height:30px;max-width:40ch">You submit a request listing the products you need.</p>
+          </div>
+        </li>
+        <li style="display:grid;grid-template-columns:64px minmax(0,1fr);padding:28px 0 36px;border-top:1px solid #B9C6C4">
+          <span aria-hidden="true" style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">02</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Selection and Finalization</h3>
+            <p style="font-size:20px;line-height:30px;max-width:40ch">We select solutions, clarify details, and finalize the terms.</p>
+          </div>
+        </li>
+        <li style="display:grid;grid-template-columns:64px minmax(0,1fr);padding:28px 0 36px;border-top:1px solid #B9C6C4">
+          <span aria-hidden="true" style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">03</span>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <h3 style="font-size:25px;line-height:30px;font-weight:600;letter-spacing:-0.01em">Delivery</h3>
+            <p style="font-size:20px;line-height:30px;max-width:40ch">We arrange delivery and oversee the process at every stage.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <sc-if value="{{ showSig }}" hint-placeholder-val="{{ true }}">
+      <div class="sig" aria-hidden="true" style="flex:0 1 640px;margin-left:auto;position:relative;padding-top:14px">
+        <div style="position:absolute;top:0;left:50%;width:128px;height:28px;margin-left:-64px;background:#1F8A8A;border-radius:3px;z-index:1"></div>
+        <div style="position:relative;background:#F2F2F0;border:1px solid #15302F;border-radius:2px;padding:64px 0 72px">
+          <div style="position:absolute;top:0;bottom:0;left:72px;width:2px;background:#1F8A8A"></div>
+          <div style="position:absolute;top:64px;bottom:0;right:120px;width:1px;background:#B9C6C4"></div>
+          <div style="border-top:2px solid #15302F">
+            <div style="height:60px;display:flex;align-items:flex-end;padding:0 136px 12px 96px;border-bottom:1px solid #B9C6C4;font-size:20px;line-height:28px;font-weight:500">Computer Equipment</div>
+            <div style="height:60px;display:flex;align-items:flex-end;padding:0 136px 12px 96px;border-bottom:1px solid #B9C6C4;font-size:20px;line-height:28px;font-weight:500">Electronics</div>
+            <div style="height:60px;display:flex;align-items:flex-end;padding:0 136px 12px 96px;border-bottom:1px solid #B9C6C4;font-size:20px;line-height:28px;font-weight:500">Audio and Video Equipment</div>
+            <div style="height:60px;display:flex;align-items:flex-end;padding:0 136px 12px 96px;border-bottom:1px solid #B9C6C4;font-size:20px;line-height:28px;font-weight:500">Components and Accessories</div>
+            <div style="height:60px;border-bottom:1px solid #B9C6C4"></div>
+            <div style="height:60px;border-bottom:1px solid #B9C6C4"></div>
+            <div style="height:60px;border-bottom:1px solid #B9C6C4"></div>
+            <div style="height:60px;border-bottom:1px solid #B9C6C4"></div>
+            <div style="height:60px;border-bottom:1px solid #B9C6C4"></div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+  </section>
+
+  <section id="advantages" aria-labelledby="adv-h" data-screen-label="Why Partners Choose Intere" style="padding:120px 0 136px">
+    <h2 id="adv-h" style="padding:0 64px;margin-bottom:40px;font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em">Why Partners Choose Intere</h2>
+    <figure style="position:relative;overflow:hidden;aspect-ratio:1440 / 480;background:#DDE3E1">
+      <div data-slot="band" role="img" aria-label="A laptop, monitor, printer, speakerphone, microphone, router, drives and cables standing in one line along an oak table" style="position:absolute;inset:0;background:#DDE3E1"></div>
+    </figure>
+    <ul style="list-style:none;padding:80px 64px 0;display:flex;flex-direction:column;align-items:flex-start;gap:56px">
+      <li style="font-size:49px;line-height:54px;font-weight:600;letter-spacing:-0.03em;text-wrap:balance">Wide range of products</li>
+      <li style="font-size:49px;line-height:54px;font-weight:600;letter-spacing:-0.03em;text-wrap:balance">Collaboration with international suppliers</li>
+      <li style="font-size:49px;line-height:54px;font-weight:600;letter-spacing:-0.03em;text-wrap:balance">Flexible approach to customer requests</li>
+      <li style="font-size:49px;line-height:54px;font-weight:600;letter-spacing:-0.03em;text-wrap:balance">Reliable supply</li>
+      <li style="font-size:49px;line-height:54px;font-weight:600;letter-spacing:-0.03em;text-wrap:balance">Focus on long-term partnerships</li>
+    </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h" data-screen-label="Contact" style="background:#DDE3E1;padding:112px 64px 128px">
+    <h2 id="contact-h" style="margin-bottom:12px;font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em;text-wrap:balance">Request Equipment</h2>
+    <p style="margin-bottom:48px;font-size:20px;line-height:30px">Hong Kong</p>
+    <form noValidate="{{ true }}" onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;flex-wrap:wrap;gap:28px 24px">
+        <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:10px">
+          <label for="f-name" style="font-size:16px;line-height:22px;font-weight:600">Name</label>
+          <input id="f-name" name="name" type="text" autoComplete="name" placeholder="Your full name" value="{{ name }}" onChange="{{ onName }}" aria-invalid="{{ nameInvalid }}" aria-describedby="f-name-err" style="height:56px;padding:0 18px;font:inherit;font-size:20px;color:#15302F;background:#F2F2F0;border:1px solid #15302F;border-radius:2px">
+          <sc-if value="{{ nameErr }}" hint-placeholder-val="{{ false }}"><p id="f-name-err" style="font-size:16px;line-height:24px;font-weight:600;border-left:3px solid #1F8A8A;padding-left:12px">{{ nameErr }}</p></sc-if>
+        </div>
+        <div style="flex:1 1 300px;display:flex;flex-direction:column;gap:10px">
+          <label for="f-contact" style="font-size:16px;line-height:22px;font-weight:600">Email or phone number</label>
+          <input id="f-contact" name="contact" type="text" autoComplete="email" placeholder="Where we can reply to you" value="{{ contact }}" onChange="{{ onContact }}" aria-invalid="{{ contactInvalid }}" aria-describedby="f-contact-err" style="height:56px;padding:0 18px;font:inherit;font-size:20px;color:#15302F;background:#F2F2F0;border:1px solid #15302F;border-radius:2px">
+          <sc-if value="{{ contactErr }}" hint-placeholder-val="{{ false }}"><p id="f-contact-err" style="font-size:16px;line-height:24px;font-weight:600;border-left:3px solid #1F8A8A;padding-left:12px">{{ contactErr }}</p></sc-if>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <label for="f-message" style="font-size:16px;line-height:22px;font-weight:600">Products and quantities</label>
+        <div style="position:relative;background:#F2F2F0;border:1px solid #15302F;border-radius:2px;padding-top:40px">
+          <textarea id="f-message" name="message" rows="9" placeholder="One product per line, with the quantity at the end of the line" value="{{ message }}" onChange="{{ onMessage }}" aria-invalid="{{ messageInvalid }}" aria-describedby="f-message-err" style="display:block;width:100%;height:398px;margin:0;padding:0 24px 0 96px;border:0;border-top:2px solid #15302F;border-radius:0;resize:vertical;font:inherit;font-size:20px;line-height:44px;color:#15302F;background-color:transparent;background-image:linear-gradient(to right, transparent 71px, #1F8A8A 71px, #1F8A8A 73px, transparent 73px), linear-gradient(to left, transparent 111px, #B9C6C4 111px, #B9C6C4 112px, transparent 112px), linear-gradient(to bottom, transparent 43px, #B9C6C4 43px);background-size:100% 100%, 100% 100%, 100% 44px;background-repeat:no-repeat, no-repeat, repeat;background-attachment:local"></textarea>
+        </div>
+        <sc-if value="{{ messageErr }}" hint-placeholder-val="{{ false }}"><p id="f-message-err" style="font-size:16px;line-height:24px;font-weight:600;border-left:3px solid #1F8A8A;padding-left:12px">{{ messageErr }}</p></sc-if>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <label for="f-consent" style="display:flex;align-items:flex-start;gap:14px;font-size:16px;line-height:24px;cursor:pointer;color:#46605D">
+          <input id="f-consent" name="consent" type="checkbox" checked="{{ consent }}" onChange="{{ onConsent }}" aria-invalid="{{ consentInvalid }}" aria-describedby="f-consent-err" style="width:22px;height:22px;margin:1px 0 0;flex:none;accent-color:#15302F;cursor:pointer">
+          <span>I agree to the processing of my data under the Privacy Policy.</span>
+        </label>
+        <sc-if value="{{ consentErr }}" hint-placeholder-val="{{ false }}"><p id="f-consent-err" style="font-size:16px;line-height:24px;font-weight:600;margin-left:36px;border-left:3px solid #1F8A8A;padding-left:12px">{{ consentErr }}</p></sc-if>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px">
+        <button type="submit" style="height:54px;padding:0 32px;background:#15302F;color:#F2F2F0;font:inherit;font-size:16px;font-weight:600;border:0;border-bottom:3px solid #1F8A8A;border-radius:2px;cursor:pointer">Submit</button>
+        <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}"><p role="status" style="font-size:16px;line-height:24px;font-weight:600">Thank you. Your request has been sent. We will reply to the contact you gave.</p></sc-if>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer data-screen-label="Footer" style="background:#15302F;color:#F2F2F0;padding:64px 64px 72px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:40px 64px">
+  <div>
+    <img src="brand/logo-light.svg" alt="INTERE" width="210" height="40" style="display:block;width:210px;height:40px;margin-bottom:24px">
+    <p style="max-width:64ch;font-size:16px;line-height:24px">© All Rights Reserved. INTERE BUSINESS DEVELOPMENT LIMITED,<br>Hong Kong</p>
+  </div>
+  <nav aria-label="Equipment Categories">
+    <ul style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,auto));gap:14px 56px">
+      <li><a href="#bay-computer" style="color:#F2F2F0;font-size:20px;line-height:28px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Computer Equipment</a></li>
+      <li><a href="#bay-electronics" style="color:#F2F2F0;font-size:20px;line-height:28px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Electronics</a></li>
+      <li><a href="#bay-av" style="color:#F2F2F0;font-size:20px;line-height:28px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Audio and Video Equipment</a></li>
+      <li><a href="#bay-components" style="color:#F2F2F0;font-size:20px;line-height:28px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Components and Accessories</a></li>
+    </ul>
+  </nav>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSignature&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Signature&quot;}}">
+class Component extends DCLogic {
+  state = { hover: null, reduced: false, navShown: false, name: '', contact: '', message: '', consent: false, errors: {}, sent: false };
+
+  componentDidMount() {
+    this.mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    this.onMq = e => this.setState({ reduced: e.matches });
+    this.setState({ reduced: this.mq.matches });
+    this.mq.addEventListener && this.mq.addEventListener('change', this.onMq);
+    const cta = document.getElementById('hero-cta');
+    if (cta && 'IntersectionObserver' in window) {
+      this.io = new IntersectionObserver(([e]) => this.setState({ navShown: !e.isIntersecting }), { rootMargin: '-88px 0px 0px 0px' });
+      this.io.observe(cta);
+    }
+  }
+  componentWillUnmount() {
+    this.mq && this.mq.removeEventListener && this.mq.removeEventListener('change', this.onMq);
+    this.io && this.io.disconnect();
+  }
+
+  check(s) {
+    const e = {};
+    if (!s.name.trim()) e.name = 'Enter your name so we know who to reply to.';
+    const c = s.contact.trim();
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c);
+    const isPhone = /^[+()\d\s.-]+$/.test(c) && c.replace(/\D/g, '').length >= 6;
+    if (!c) e.contact = 'Enter an email address or a phone number so we can reply.';
+    else if (!isEmail && !isPhone) e.contact = 'This is not a complete email address or phone number. Check it and try again.';
+    if (!s.message.trim()) e.message = 'Add at least one product to your list, one per line.';
+    if (!s.consent) e.consent = 'Tick the box to agree to the Privacy Policy, then submit again.';
+    return e;
+  }
+
+  field(key, value) {
+    this.setState(s => {
+      const errors = { ...s.errors };
+      delete errors[key];
+      return { [key]: value, errors, sent: false };
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const t = i => (!s.reduced && s.hover === i) ? 'translate(-6px, -4px)' : 'translate(0px, 0px)';
+    const enter = i => () => this.setState({ hover: i });
+    return {
+      showSig: this.props.showSignature ?? true,
+      navShown: s.navShown ? 'true' : 'false',
+      t0: t(0), t1: t(1), t2: t(2), t3: t(3),
+      enter0: enter(0), enter1: enter(1), enter2: enter(2), enter3: enter(3),
+      leave: () => this.setState({ hover: null }),
+      name: s.name, contact: s.contact, message: s.message, consent: s.consent, sent: s.sent,
+      nameErr: s.errors.name || '', contactErr: s.errors.contact || '', messageErr: s.errors.message || '', consentErr: s.errors.consent || '',
+      nameInvalid: !!s.errors.name, contactInvalid: !!s.errors.contact, messageInvalid: !!s.errors.message, consentInvalid: !!s.errors.consent,
+      onName: e => this.field('name', e.target.value),
+      onContact: e => this.field('contact', e.target.value),
+      onMessage: e => this.field('message', e.target.value),
+      onConsent: e => this.field('consent', e.target.checked),
+      submit: e => {
+        e.preventDefault();
+        const errors = this.check(s);
+        const first = ['name', 'contact', 'message', 'consent'].find(k => errors[k]);
+        if (first) {
+          this.setState({ errors, sent: false });
+          const el = document.getElementById('f-' + first);
+          el && el.focus();
+          return;
+        }
+        this.setState({ name: '', contact: '', message: '', consent: false, errors: {}, sent: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
