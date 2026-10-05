@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>AutoLine Supply - Wholesale Auto Parts &amp; Accessories, Mauritius</title>
+<meta name="description" content="Filters, brake parts, electrical components and accessories, wholesale from Mauritius. Send part numbers, get a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..100,300..600&family=Martian+Mono:wdth,wght@87.5,400..500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#111315;
+  --steel:#181B1E;
+  --line:#2C3136;
+  --text:#E9ECEE;
+  --muted:#9AA3AA;
+  --lime:#C8F031;
+  --lime-deep:#B2DA1B;
+  --ink:#0E0F10;
+  --err:#FF8A7A;
+  --side:40px;
+  --gap:136px;
+  --max:1440px;
+  --head:68px;
+  --sans:"Mona Sans",system-ui,sans-serif;
+  --mono:"Martian Mono",ui-monospace,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--head)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--side)}
+.tag{font-family:var(--mono);font-stretch:87.5%;font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.display{font-stretch:75%;font-weight:300;line-height:.9;letter-spacing:-.01em;text-transform:uppercase}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:16px;top:12px;z-index:100;background:var(--lime);color:var(--ink);padding:10px 16px}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 30px 0 26px;border:0;border-radius:0;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);background:var(--lime);color:var(--ink);font:inherit;font-size:14px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;line-height:1;text-decoration:none;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--lime-deep)}
+.btn:focus-visible{outline:none;box-shadow:inset 0 0 0 3px var(--ink)}
+
+
+header{position:sticky;top:0;z-index:50;height:var(--head);background:rgba(17,19,21,.94);border-bottom:1px solid var(--line)}
+header .wrap{height:100%;display:flex;align-items:center;gap:40px;max-width:none}
+header .logo img{height:46px;width:auto}
+header nav{margin-left:auto;display:flex;gap:32px}
+header nav a{text-decoration:none;color:var(--muted);padding:6px 0;transition:color .2s}
+header nav a:hover{color:var(--text)}
+header .btn{min-height:42px;padding:0 24px 0 20px;font-size:13px;opacity:0;visibility:hidden;transition:opacity .3s,visibility 0s .3s,background .2s}
+header.show-btn .btn{opacity:1;visibility:visible;transition:opacity .3s,visibility 0s,background .2s}
+.menu-btn{display:none}
+
+.hero{padding-top:56px;overflow:hidden}
+.hero h1{position:relative;z-index:2;font-size:clamp(56px,8.4vw,150px);line-height:.86;letter-spacing:-.015em}
+.hero h1 span{display:block}
+.hero .pano{position:relative;margin-top:-3.2vw;height:clamp(300px,calc(100svh - 480px),640px);width:100%;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 18%);mask-image:linear-gradient(180deg,transparent 0,#000 18%)}
+.hero .pano img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
+.hero .bar{display:flex;align-items:flex-end;justify-content:space-between;gap:24px 48px;flex-wrap:wrap;padding-top:28px;padding-bottom:40px;border-bottom:1px solid var(--line)}
+.hero .lead{max-width:52ch;font-size:19px;color:#C9CFD3}
+.hero .seq{opacity:0;transform:translateY(14px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .seq:nth-child(2){animation-delay:.12s}
+@keyframes up{to{opacity:1;transform:none}}
+
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.band{margin-top:var(--gap);aspect-ratio:21/9;max-height:760px;overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover}
+.sec{padding-top:var(--gap)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-bottom:32px}
+.sec-head h2{font-size:clamp(44px,5vw,80px)}
+.sec-head .tag{color:var(--muted)}
+
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:72px 4fr 5fr 5fr;gap:32px;align-items:start;padding:28px 0;border-bottom:1px solid var(--line)}
+.row .tag{color:var(--lime);padding-top:10px}
+.row h3{font-size:clamp(40px,4.2vw,68px)}
+.row p{max-width:34ch;padding-top:8px;font-size:18px;color:#C9CFD3}
+.row .pic{aspect-ratio:4/3;overflow:hidden}
+.row .pic img{width:100%;height:100%;object-fit:cover}
+
+.board{border-top:1px solid var(--line)}
+.board li{display:grid;grid-template-columns:72px 1fr;gap:32px;align-items:baseline;padding:22px 0 20px;border-bottom:1px solid var(--line)}
+.board .tag{color:var(--muted);transition:color .2s}
+.board li:hover .tag{color:var(--lime)}
+.board p{font-size:clamp(34px,4.6vw,76px);font-stretch:75%;font-weight:300;line-height:.95;text-transform:uppercase;letter-spacing:-.005em}
+
+.send{margin-top:var(--gap);background:var(--lime);color:var(--ink)}
+.send .wrap{padding-top:96px;padding-bottom:104px}
+.send h2{font-size:clamp(44px,5vw,80px)}
+.send ol{margin-top:48px;display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--ink)}
+.send li{display:grid;grid-template-columns:64px 1fr;gap:16px;align-items:baseline;padding:22px 24px 22px 0;border-bottom:1px solid rgba(14,15,16,.35)}
+.send li .tag{font-size:14px}
+.send li span:last-child{font-size:clamp(28px,2.9vw,46px);font-stretch:75%;font-weight:400;line-height:1;text-transform:uppercase}
+.send .missing{margin-top:36px;max-width:40ch;font-size:clamp(20px,1.7vw,26px);line-height:1.3}
+.send .missing b{font-weight:600}
+
+.request{padding-bottom:var(--gap)}
+.request .grid{display:grid;grid-template-columns:4fr 8fr;gap:48px;align-items:start}
+form{display:flex;flex-direction:column;gap:36px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field>span,.lines th{font-family:var(--mono);font-stretch:87.5%;font-size:12px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left}
+.field input,.lines input{width:100%;min-width:0;font:inherit;font-size:19px;color:var(--text);background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:8px 0;outline:none;transition:border-color .2s}
+.field input:focus,.lines input:focus{border-bottom-color:var(--lime)}
+input.code{font-family:var(--mono);font-stretch:87.5%;font-size:17px;letter-spacing:.02em}
+.field .err,.lines-err{display:none;font-size:14px;font-weight:500;font-style:normal;color:var(--err)}
+.field.invalid input{border-bottom:2px solid var(--err)}
+.field.invalid .err{display:block}
+.lines{width:100%;border-collapse:collapse;table-layout:fixed}
+.lines th{padding:0 16px 6px 0}
+.lines td{padding:0 16px 0 0;vertical-align:bottom}
+.lines col.c-part{width:38%}.lines col.c-veh{width:40%}.lines col.c-qty{width:14%}.lines col.c-del{width:8%}
+.lines input[aria-invalid=true]{border-bottom:2px solid var(--err)}
+.lines .del{width:44px;height:44px;display:grid;place-items:center;background:none;border:1px solid var(--line);color:var(--muted);font:inherit;font-size:18px;line-height:1;cursor:pointer;transition:color .2s,border-color .2s}
+.lines .del:hover{color:var(--text);border-color:var(--muted)}
+.lines tr:only-child .del{visibility:hidden}
+.add{align-self:flex-start;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;background:none;border:1px dashed var(--muted);color:var(--text);font-family:var(--mono);font-stretch:87.5%;font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:border-color .2s,color .2s}
+.add:hover{border-color:var(--lime);color:var(--lime)}
+.lines-wrap{display:flex;flex-direction:column;gap:14px}
+.lines-wrap.invalid .lines-err{display:block}
+.field input[type=file]{font-size:15px;color:var(--muted);border-bottom:0;padding-top:10px}
+.field input[type=file]::file-selector-button{margin-right:14px;padding:11px 16px;border:1px solid var(--muted);border-radius:0;background:transparent;color:var(--text);font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
+.form-foot{display:flex;align-items:center;gap:24px;flex-wrap:wrap;padding-top:8px;border-top:1px solid var(--line);padding-top:28px}
+.consent{font-size:15px;color:var(--muted)}
+.note{font-size:13px;color:#6F787F}
+
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-top:28px;padding-bottom:24px;max-width:none}
+footer img{height:34px;width:auto}
+footer p{margin:40px 0 0;font-size:9.1vw;color:var(--muted);white-space:nowrap}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:1100px){
+  :root{--side:28px;--gap:112px}
+  header nav{gap:20px}
+  .row{grid-template-columns:56px 1fr 1fr;gap:20px 24px}
+  .row .pic{grid-column:2/-1}
+  .board li,.send li{grid-template-columns:56px 1fr}
+  .request .grid{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:760px){
+  :root{--side:16px;--gap:84px;--head:60px}
+  body{font-size:16px}
+  header .wrap{gap:12px}
+  header .logo img{height:36px}
+  header nav,header .btn{display:none}
+  .menu-btn{display:inline-flex;margin-left:auto;align-items:center;gap:10px;min-height:44px;padding:0 4px;background:none;border:0;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text);cursor:pointer}
+  .menu-btn i{position:relative;display:block;width:22px;height:2px;background:currentColor;box-shadow:0 -7px 0 currentColor,0 7px 0 currentColor;transition:background .2s}
+  .menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;top:0;width:22px;height:2px;background:currentColor;opacity:0;transition:transform .25s,opacity .2s}
+  .menu-btn[aria-expanded="true"] i{background:transparent;box-shadow:none}
+  .menu-btn[aria-expanded="true"] i::before{opacity:1;transform:rotate(45deg)}
+  .menu-btn[aria-expanded="true"] i::after{opacity:1;transform:rotate(-45deg)}
+  .drop{position:fixed;inset:var(--head) 0 0 0;z-index:49;background:var(--bg);padding:8px var(--side) 24px;display:flex;flex-direction:column}
+  .drop[hidden]{display:none}
+  .drop a:not(.btn){font-size:40px;font-stretch:75%;font-weight:300;line-height:1;text-transform:uppercase;text-decoration:none;padding:22px 0 16px;border-bottom:1px solid var(--line)}
+  .drop .btn{margin-top:auto;width:100%}
+  .hero{padding-top:32px}
+  .hero h1{font-size:15.4vw}
+  .hero .pano{height:auto;aspect-ratio:4/3;margin-top:-4vw}
+  .hero .pano img{object-position:12% 50%}
+  .band{aspect-ratio:4/5}
+  .hero .bar{padding-top:20px;padding-bottom:32px}
+  .hero .lead{font-size:16px}
+  .hero .btn{width:100%}
+  .sec-head h2,.send h2{font-size:44px}
+  .row{grid-template-columns:40px 1fr;gap:12px 14px;padding:22px 0}
+  .row .tag{padding-top:6px}
+  .row h3{font-size:40px}
+  .row p{grid-column:2;padding-top:0;font-size:16px}
+  .row .pic{grid-column:1/-1}
+  .board li{grid-template-columns:40px 1fr;gap:14px;padding:18px 0 16px}
+  .board p{font-size:32px}
+  .send .wrap{padding-top:64px;padding-bottom:72px}
+  .send ol{grid-template-columns:1fr;margin-top:32px}
+  .send li{grid-template-columns:44px 1fr;padding:18px 0}
+  .send li span:last-child{font-size:30px}
+  .pair{grid-template-columns:1fr;gap:28px}
+  .lines thead{display:none}
+  .lines,.lines tbody,.lines tr,.lines td{display:block;width:100%}
+  .lines colgroup{display:none}
+  .lines tr{position:relative;padding:14px 0 18px;border-top:1px solid var(--line)}
+  .lines td{padding:0 0 12px}
+  .lines td[data-th]::before{content:attr(data-th);display:block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+  .lines td.d{position:absolute;right:0;top:10px;width:auto;padding:0}
+  .form-foot .btn{width:100%}
+  footer p{white-space:normal;font-size:12.4vw;margin-top:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal,.hero .seq{opacity:1;transform:none;animation:none;transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="AutoLine Supply, to the top"><img src="brand/logo-white.png" alt="AutoLine" width="73" height="42"></a>
+    <nav class="tag" aria-label="Main">
+      <a href="#products">Products</a>
+      <a href="#customers">Customers</a>
+      <a href="#send">What to Send</a>
+    </nav>
+    <a class="btn" href="#request" tabindex="-1">Request Pricing</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drop">Menu <i aria-hidden="true"></i></button>
+  </div>
+</header>
+<div class="drop" id="drop" hidden>
+  <a href="#products">Products</a>
+  <a href="#customers">Customers</a>
+  <a href="#send">What to Send</a>
+  <a class="btn" href="#request">Request Pricing</a>
+</div>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="h1">
+    <div class="wrap">
+      <h1 id="h1" class="display seq"><span>Send us the part numbers.</span> <span>We'll quote the lot.</span></h1>
+    </div>
+    <div class="pano"><img src="images/hero.webp" alt="New brake disc, caliper, pads, oil and air filters, drive belt, wheel bearing, shock absorber, ball joint and a headlamp bulb in a row" width="2000" height="848" fetchpriority="high"></div>
+    <div class="wrap bar seq">
+      <p class="lead">AutoLine Supply is a Mauritius wholesaler of parts, components and accessories for cars, vans and light commercial vehicles.</p>
+      <a class="btn" id="hero-btn" href="#request">Request Pricing</a>
+    </div>
+  </section>
+
+  <section class="sec" id="products" aria-labelledby="pr-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><h2 id="pr-h" class="display">What we carry</h2></div>
+      <div class="rows">
+        <article class="row reveal"><span class="tag">01</span><h3 class="display">Parts</h3><p>filters, brake pads and discs, belts, bearings, suspension and steering parts.</p><div class="pic"><img src="images/p-parts.webp" alt="Oil filter, air filter, brake pads, drive belt, wheel bearing and ball joint" width="1200" height="896" loading="lazy" decoding="async"></div></article>
+        <article class="row reveal"><span class="tag">02</span><h3 class="display">Components</h3><p>electrical and lighting components, sensors, gaskets and seals, fasteners.</p><div class="pic"><img src="images/p-components.webp" alt="Oxygen sensor, wheel speed sensor, relay, headlamp bulbs, gaskets and a tray of fasteners" width="1200" height="896" loading="lazy" decoding="async"></div></article>
+        <article class="row reveal"><span class="tag">03</span><h3 class="display">Accessories</h3><p>floor mats, seat covers, wiper blades, roof racks.</p><div class="pic"><img src="images/p-accessories.webp" alt="Rubber floor mats, a seat cover, wiper blades and roof rack bars" width="1200" height="896" loading="lazy" decoding="async"></div></article>
+        <article class="row reveal"><span class="tag">04</span><h3 class="display">Workshop supplies</h3><p>consumables and small items for maintenance and assembly.</p><div class="pic"><img src="images/p-workshop.webp" alt="Brake cleaner, nitrile gloves, cable ties, grease, insulating tape and shop towels" width="1200" height="896" loading="lazy" decoding="async"></div></article>
+      </div>
+    </div>
+  </section>
+
+  <figure class="band reveal"><img src="images/band-repair.webp" alt="A mechanic fitting a new brake disc to the hub of a raised car" width="2000" height="848" loading="lazy" decoding="async"></figure>
+
+  <section class="sec" id="customers" aria-labelledby="cu-h">
+    <div class="wrap">
+      <div class="sec-head reveal"><h2 id="cu-h" class="display">Who we supply</h2></div>
+      <ol class="board reveal">
+        <li><span class="tag">01</span><p>Repair shops and service centers.</p></li>
+        <li><span class="tag">02</span><p>Fleet operators.</p></li>
+        <li><span class="tag">03</span><p>Parts distributors and retailers.</p></li>
+        <li><span class="tag">04</span><p>Companies running vehicles or technical equipment.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <figure class="band reveal"><img src="images/band-counter.webp" alt="A mechanic and a counter assistant reading the markings on an old part at a parts shop counter" width="2000" height="848" loading="lazy" decoding="async"></figure>
+
+  <section class="send" id="send" aria-labelledby="se-h">
+    <div class="wrap reveal">
+      <h2 id="se-h" class="display">What to send</h2>
+      <ol>
+        <li><span class="tag">(1)</span><span>Part number or OEM reference.</span></li>
+        <li><span class="tag">(2)</span><span>Make, model, year.</span></li>
+        <li><span class="tag">(3)</span><span>Quantity.</span></li>
+        <li><span class="tag">(4)</span><span>Delivery location.</span></li>
+      </ol>
+      <p class="missing"><b>Missing a number?</b> Send a photo of the old part with the vehicle details.</p>
+    </div>
+  </section>
+
+  <section class="sec request" id="request" aria-labelledby="rq-h">
+    <div class="wrap grid">
+      <div class="sec-head reveal"><h2 id="rq-h" class="display">Request pricing</h2></div>
+      <form class="reveal" novalidate>
+        <div class="pair">
+          <label class="field" data-req="company"><span>Company</span><input name="company" autocomplete="organization"><em class="err">Enter your company name.</em></label>
+          <label class="field" data-req="email"><span>Email</span><input name="email" type="email" autocomplete="email"><em class="err">Enter a valid email.</em></label>
+        </div>
+        <div class="lines-wrap">
+          <table class="lines">
+            <colgroup><col class="c-part"><col class="c-veh"><col class="c-qty"><col class="c-del"></colgroup>
+            <thead><tr><th scope="col">Part no. / OEM ref</th><th scope="col">Vehicle</th><th scope="col">Qty</th><th scope="col"><span class="vh">Remove</span></th></tr></thead>
+            <tbody id="lines"></tbody>
+          </table>
+          <button class="add" type="button" id="add">+ Add a part</button>
+          <em class="lines-err" role="alert">Fill in the part number, vehicle and quantity on each line, or attach a photo.</em>
+        </div>
+        <label class="field"><span>Photo (optional)</span><input name="photo" type="file" accept="image/*"></label>
+        <div class="form-foot">
+          <button class="btn" type="submit">Get a Quote</button>
+          <p class="consent">We use these details only to answer your request. <a href="#">Privacy policy</a></p>
+        </div>
+        <p class="note">Preview only: the form is not sent anywhere.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a href="#top" aria-label="AutoLine Supply, to the top"><img src="brand/logo-white.png" alt="AutoLine" width="59" height="34"></a>
+    <p class="display">AutoLine Supply Ltd - Mauritius</p>
+  </div>
+</footer>
+
+<template id="line-tpl"><tr>
+  <td data-th="Part no. / OEM ref"><input class="code" name="part" autocomplete="off" spellcheck="false" aria-label="Part no. / OEM ref"></td>
+  <td data-th="Vehicle"><input name="vehicle" aria-label="Vehicle"></td>
+  <td data-th="Qty"><input class="code" name="qty" inputmode="numeric" aria-label="Qty"></td>
+  <td class="d"><button class="del" type="button" aria-label="Remove this line">×</button></td>
+</tr></template>
+
+<script>
+(()=>{
+  const btn=document.querySelector('.menu-btn'), drop=document.getElementById('drop');
+  const setMenu=open=>{btn.setAttribute('aria-expanded',open);drop.hidden=!open;document.body.style.overflow=open?'hidden':''};
+  btn.addEventListener('click',()=>setMenu(btn.getAttribute('aria-expanded')!=='true'));
+  drop.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&btn.getAttribute('aria-expanded')==='true'){setMenu(false);btn.focus()}});
+  matchMedia('(min-width:761px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});
+
+  const head=document.querySelector('header'), headBtn=head.querySelector('.btn');
+  new IntersectionObserver(([e])=>{const show=!e.isIntersecting;head.classList.toggle('show-btn',show);headBtn.tabIndex=show?0:-1},{rootMargin:'-68px 0px 0px 0px'}).observe(document.getElementById('hero-btn'));
+
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  const f=document.querySelector('form'), body=document.getElementById('lines'), tpl=document.getElementById('line-tpl'), add=document.getElementById('add'), photo=f.querySelector('input[name=photo]'), wrap=f.querySelector('.lines-wrap');
+  const MAX=20;
+  const addLine=focus=>{if(body.rows.length>=MAX)return;body.append(tpl.content.cloneNode(true));if(focus)body.lastElementChild.querySelector('input').focus();add.hidden=body.rows.length>=MAX};
+  addLine(false);
+  add.addEventListener('click',()=>addLine(true));
+  body.addEventListener('click',e=>{const d=e.target.closest('.del');if(!d)return;const tr=d.closest('tr');const next=tr.nextElementSibling||tr.previousElementSibling;tr.remove();add.hidden=false;if(next)next.querySelector('input').focus()});
+
+  const fieldOk={company:v=>v.length>0,email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)};
+  f.addEventListener('submit',e=>{
+    e.preventDefault();let first=null;
+    f.querySelectorAll('.field[data-req]').forEach(l=>{const el=l.querySelector('input');const ok=fieldOk[l.dataset.req](el.value.trim());l.classList.toggle('invalid',!ok);el.setAttribute('aria-invalid',!ok);if(!ok&&!first)first=el});
+    const hasPhoto=photo.files.length>0;let linesBad=false;
+    [...body.rows].forEach((tr,i)=>{
+      const [p,v,q]=tr.querySelectorAll('input');const vals=[p,v,q].map(x=>x.value.trim());
+      const empty=vals.every(x=>!x);
+      let bad=[];
+      if(i===0&&empty&&!hasPhoto)bad=[p,v,q];
+      else if(!empty){if(!vals[0]&&!hasPhoto)bad.push(p);if(!vals[1])bad.push(v);if(!vals[2])bad.push(q)}
+      [p,v,q].forEach(x=>x.setAttribute('aria-invalid',bad.includes(x)));
+      if(bad.length){linesBad=true;if(!first)first=bad[0]}
+    });
+    wrap.classList.toggle('invalid',linesBad);
+    if(first)first.focus();
+  });
+  const clear=e=>{const l=e.target.closest('.field.invalid');if(l)l.classList.remove('invalid');if(e.target.closest('.lines'))e.target.setAttribute('aria-invalid',false);if(e.target===photo||!body.querySelector('[aria-invalid=true]'))wrap.classList.remove('invalid')};
+  f.addEventListener('input',clear);f.addEventListener('change',clear);
+})();
+</script>
+</body>
+</html>
