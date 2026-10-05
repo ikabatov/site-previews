@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Movanta: Freight Forwarding by Road, Sea and Air from Mauritius</title>
+<meta name="description" content="Movanta plans road, sea and air freight, coordinates carriers and prepares transport documents and cargo declarations.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&family=Red+Hat+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+html,body{margin:0;background:#EAE8E2;color:#2B2A27}
+body{font-family:'Red Hat Text',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:#2B2A27;text-underline-offset:4px}
+a:hover{color:#2B2A27;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid #1E2124;outline-offset:3px}
+input:focus-visible,textarea:focus-visible{outline-offset:-5px}
+footer :focus-visible,#stages :focus-visible{outline-color:#D6D6D0}
+::placeholder{color:#4D5155;opacity:1}
+.err{display:flex;gap:10px;align-items:baseline;min-height:1.4em;font-size:15px;font-weight:500;line-height:1.4;color:#2B2A27}
+#request :focus-visible{outline-offset:2px}
+[data-slot="documents"]{background:#DDE3E1 url(images/documents.webp) center/cover no-repeat !important}
+[data-slot="strap"]{background:#DDE3E1 url(images/strap.webp) center/cover no-repeat !important}
+[data-slot="seal"]{background:#DDE3E1 url(images/seal.webp) center/cover no-repeat !important}
+
+:root{--bg:#EAE8E2;--ink:#1E2124;--text:#2B2A27;--y:#F2C230}
+.track{position:relative;background:var(--bg)}
+.scene{position:sticky;top:0;height:100vh;overflow:hidden;overflow:clip;background:#B4AEA4}
+video.clip{position:absolute;display:block;pointer-events:none}
+.hero-txt{position:absolute;left:var(--g,80px);top:130px;width:var(--tw,min(440px,34vw));z-index:5;will-change:opacity,transform}
+.hero-txt .eyebrow{font-size:14px;font-weight:600;letter-spacing:.06em;margin-bottom:20px}
+.hero-txt h1{font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:clamp(42px,calc(var(--tw,440px)*0.11),48px);line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+.hero-txt p.lead{font-size:19px;line-height:1.5;margin-top:24px;text-wrap:pretty}
+.hero-txt .acts{display:flex;align-items:center;gap:28px;margin-top:32px;flex-wrap:wrap}
+.btn-y{display:inline-block;background:var(--y);color:var(--text);border:2px solid var(--ink);padding:13px 24px;font-size:16px;font-weight:600;text-decoration:none;border-radius:10px}
+.btn-y:hover,.btn-head:hover,.btn-send:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.strip{position:absolute;top:44px;left:0;width:calc(100% - 2 * var(--g,80px));display:flex;justify-content:space-between;gap:48px;align-items:flex-start;color:#2B2A27;will-change:transform;transform:translateX(100vw);z-index:4}
+.lead-b{flex:0 1 440px;min-width:0}
+.lead-b h2{font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:40px;line-height:1.02;letter-spacing:-.01em;color:#2B2A27}
+.lead-b p{font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:19px;line-height:1.4;margin-top:18px;color:rgba(43,42,39,.72);max-width:30ch}
+.cards{display:flex;list-style:none;margin:0;padding:0}
+.card{flex:none;width:clamp(220px,18vw,260px);padding:0 28px;border-left:1px solid rgba(43,42,39,.18)}
+.card:first-child{border-left:0;padding-left:0}
+.card .ic{height:48px;display:flex;align-items:flex-end} .card .ic svg{width:80px;height:auto}
+.card .ic svg g{fill:none;stroke:#2B2A27;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.card h3{font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:30px;line-height:1.1;margin-top:18px}
+.card p{font-size:16px;line-height:1.5;margin-top:12px}
+.sweep{background:linear-gradient(90deg,#2B2A27 calc(var(--s,0%) - 34%),#B98A00 calc(var(--s,0%) - 6%),transparent calc(var(--s,0%) + 26%));-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (max-height:860px){
+  .hero-txt{top:104px}
+  .hero-txt .eyebrow{margin-bottom:12px}
+  .hero-txt p.lead{font-size:17px;margin-top:14px}
+  .hero-txt .acts{margin-top:18px;row-gap:10px}
+}
+@media (max-height:760px){
+  .hero-txt{top:96px}
+  .hero-txt h1{font-size:40px;line-height:1.04}
+  .hero-txt p.lead{font-size:16px;margin-top:12px}
+  .hero-txt .acts{margin-top:14px}
+}
+.stg{position:relative}
+.stg-track{position:absolute;left:32px;top:30px;height:4px;width:var(--trk,0px);background:rgba(236,236,230,.16);border-radius:2px}
+.stg-fill{position:absolute;left:0;top:-1px;height:6px;width:100%;background:#F2C230;border-radius:3px;transform-origin:left center;transform:scaleX(var(--p,0))}
+.stg-dot{position:relative;z-index:1;display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#1E2124;box-shadow:inset 0 0 0 2px #F2C230}
+.stg-dot svg{fill:none;stroke:#F2C230;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+.stg-wipe{position:absolute;inset:0;display:grid;place-items:center;border-radius:50%;background:#F2C230;clip-path:inset(0 calc((1 - var(--w,0)) * 100%) 0 0)}
+.stg-wipe svg{stroke:#1E2124}
+</style></head>
+<body>
+<div id="top" style="position:relative;min-width:320px;font-family:'Red Hat Text',system-ui,sans-serif;color:#2B2A27;background:#EAE8E2">
+<div class="track" id="track">
+<header style="position:absolute;top:0;left:0;right:0;z-index:30;padding:0 80px;border-bottom:1px solid #2B2A27">
+  <div style="max-width:1600px;margin:0 auto;min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:48px;flex-wrap:wrap">
+    <a href="#top" style="display:block;line-height:0"><img src="assets/logo-ink.png" alt="Movanta" style="height:36px;width:auto;display:block"></a>
+    <nav aria-label="Main" style="display:flex;align-items:center;gap:56px;flex-wrap:wrap">
+      <div style="position:relative;display:flex;align-items:flex-end">
+        <span class="route" aria-hidden="true" style="position:absolute;left:6px;right:18px;bottom:3px;height:4px;background:#F2C230;border-top:1px solid #1E2124;border-bottom:1px solid #1E2124"></span>
+        <a href="#modes" style="position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:6px 52px 0 0;text-decoration:none;font-size:16px;font-weight:500;line-height:1.2">Modes<span class="route" aria-hidden="true" style="position:relative;width:10px;height:10px;border-radius:50%;background:#F2C230;box-shadow:0 0 0 2px #1E2124"></span></a>
+        <a href="#documentation" style="position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:6px 52px 0 0;text-decoration:none;font-size:16px;font-weight:500;line-height:1.2">Documentation<span class="route" aria-hidden="true" style="position:relative;width:10px;height:10px;border-radius:50%;background:#F2C230;box-shadow:0 0 0 2px #1E2124"></span></a>
+        <a href="#stages" style="position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:6px 24px 0 0;text-decoration:none;font-size:16px;font-weight:500;line-height:1.2">Shipment stages<span class="route" aria-hidden="true" style="position:relative;width:10px;height:10px;border-radius:50%;background:#F2C230;box-shadow:0 0 0 2px #1E2124"></span></a>
+      </div>
+      <a href="#request" class="btn-head" style="display:inline-block;background:#F2C230;color:#2B2A27;border:2px solid #1E2124;padding:12px 22px;font-size:16px;font-weight:600;text-decoration:none;border-radius:10px">Request a route</a>
+    </nav>
+  </div>
+</header>
+<div class="scene" id="scene">
+  <video class="clip" id="clip" poster="media/poster-k4r2.jpg" muted playsinline preload="auto" aria-hidden="true"></video>
+  <div class="hero-txt" id="heroTxt">
+    <p class="eyebrow">FREIGHT FORWARDING, MAURITIUS</p>
+    <h1>Movanta moves cargo by road, sea and air and keeps the paperwork straight.</h1>
+    <p class="lead">Movanta Limited plans the route, books and coordinates the carriers and prepares the documents each consignment needs.</p>
+    <div class="acts"><a class="btn-y" href="#request">Request a route</a><a href="#stages" style="font-size:17px;font-weight:600">How a shipment runs</a></div>
+  </div>
+  <div class="strip" id="strip">
+    <div class="lead-b" id="modes"><h2>Road, sea, air or all&nbsp;three</h2><p>Where a route needs more than one mode, Movanta joins them into a single multimodal plan and manages each handover between&nbsp;carriers.</p></div>
+    <ul class="cards"><li class="card"><div class="ic"><svg aria-hidden="true" width="112" height="63" viewBox="0 0 64 36"><g><rect x="2" y="6" width="38" height="20"></rect><path d="M40 12 H52 L60 20 V26 H40 Z"></path><path d="M44 15 H51 L55 20 H44 Z"></path><circle cx="12" cy="30" r="4"></circle><circle cx="50" cy="30" r="4"></circle></g></svg></div><h3 class="sweep">Road.</h3><p class="sweep">Overland transport on regional and <span style="white-space:nowrap">cross-border</span> routes.</p></li>
+<li class="card"><div class="ic"><svg aria-hidden="true" width="112" height="63" viewBox="0 0 64 36"><g><path d="M2 22 H62 L56 32 H8 Z"></path><rect x="10" y="14" width="10" height="8"></rect><rect x="20" y="14" width="10" height="8"></rect><rect x="20" y="6" width="10" height="8"></rect><rect x="30" y="14" width="10" height="8"></rect><rect x="46" y="10" width="8" height="12"></rect></g></svg></div><h3 class="sweep">Sea.</h3><p class="sweep">For larger and heavier consignments, full or shared containers.</p></li>
+<li class="card"><div class="ic"><svg aria-hidden="true" width="112" height="63" viewBox="0 0 64 36"><g><path d="M8 18 H50 Q60 18 61 21 Q60 24 50 24 H12 Z"></path><path d="M11 18 L7 8 H12 L19 18"></path><path d="M27 24 L36 32 H41 L36 24"></path><path d="M30 18 L36 12 H40 L38 18"></path></g></svg></div><h3 class="sweep">Air.</h3><p class="sweep">When the delivery date is the priority.</p></li></ul>
+  </div>
+</div>
+</div>
+<main>
+<section id="documentation" aria-labelledby="documentation-h" style="padding:152px 80px 0">
+  <div style="max-width:1600px;margin:0 auto;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:center">
+    <div style="grid-column:7 / span 6;grid-row:1">
+      <h2 id="documentation-h" style="font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:40px;line-height:1.1;letter-spacing:-0.005em;text-wrap:balance">Documentation</h2>
+      <p style="font-size:20px;line-height:1.6;margin-top:36px;max-width:52ch;text-wrap:pretty">Movanta prepares transport documents for each leg of the journey and the commercial paperwork that travels with the cargo, and supports clients with customs declarations and the procedures that come with them.</p>
+    </div>
+    <figure data-slot="documents" style="grid-column:1 / span 5;grid-row:1;aspect-ratio:1/1;background:#B4B4AC">
+      <div role="img" aria-label="A set of transport documents and waybill copies laid out on a desk" style="width:100%;height:100%"></div>
+    </figure>
+  </div>
+</section>
+
+<section id="stages" aria-labelledby="stages-h" style="position:relative;z-index:2;margin-top:152px;padding:120px 80px 136px;overflow:hidden;background:#1E2124;color:#D6D6D0">
+  <div style="max-width:1600px;margin:0 auto">
+    <h2 id="stages-h" style="font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:40px;line-height:1.1;letter-spacing:-0.005em;">Five stages of a shipment</h2>
+    <ol id="stg" style="list-style:none;padding:0;margin-top:64px;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:32px">
+      <span class="stg-track" aria-hidden="true"><span class="stg-fill"></span></span>
+      <li class="stg">
+        <span class="stg-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><rect x="6" y="4" width="12" height="17" rx="1"/><path d="M9 4V2.5h6V4"/><path d="M9 10h6M9 13.5h6M9 17h3.5"/></svg><span class="stg-wipe"><svg viewBox="0 0 24 24" width="28" height="28"><rect x="6" y="4" width="12" height="17" rx="1"/><path d="M9 4V2.5h6V4"/><path d="M9 10h6M9 13.5h6M9 17h3.5"/></svg></span></span>
+        <p style="margin-top:32px;font-size:19px;line-height:1.5;padding-right:8px;text-wrap:balance;color:#ECECE6"><strong style="font-family:'Red Hat Display',sans-serif;font-weight:500;color:#F2C230">Request:</strong> cargo details, origin, destination and timing.</p>
+      </li>
+      <li class="stg">
+        <span class="stg-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="5.5" r="2"/><path d="M7.5 18.5H13a3.25 3.25 0 0 0 0-6.5h-2a3.25 3.25 0 0 1 0-6.5h5.5"/></svg><span class="stg-wipe"><svg viewBox="0 0 24 24" width="28" height="28"><circle cx="5.5" cy="18.5" r="2"/><circle cx="18.5" cy="5.5" r="2"/><path d="M7.5 18.5H13a3.25 3.25 0 0 0 0-6.5h-2a3.25 3.25 0 0 1 0-6.5h5.5"/></svg></span></span>
+        <p style="margin-top:32px;font-size:19px;line-height:1.5;padding-right:8px;text-wrap:balance;color:#ECECE6"><strong style="font-family:'Red Hat Display',sans-serif;font-weight:500;color:#F2C230">Routing:</strong> Movanta compares the options and proposes a route and modes.</p>
+      </li>
+      <li class="stg">
+        <span class="stg-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 14l2.2 2.2L15.5 12"/></svg><span class="stg-wipe"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 14l2.2 2.2L15.5 12"/></svg></span></span>
+        <p style="margin-top:32px;font-size:19px;line-height:1.5;padding-right:8px;text-wrap:balance;color:#ECECE6"><strong style="font-family:'Red Hat Display',sans-serif;font-weight:500;color:#F2C230">Agreement:</strong> scope and conditions are confirmed.</p>
+      </li>
+      <li class="stg">
+        <span class="stg-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><rect x="1.5" y="6.5" width="13" height="9"/><path d="M14.5 9.5h4l3 3.5v2.5h-7z"/><circle cx="5.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg><span class="stg-wipe"><svg viewBox="0 0 24 24" width="28" height="28"><rect x="1.5" y="6.5" width="13" height="9"/><path d="M14.5 9.5h4l3 3.5v2.5h-7z"/><circle cx="5.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></span></span>
+        <p style="margin-top:32px;font-size:19px;line-height:1.5;padding-right:8px;text-wrap:balance;color:#ECECE6"><strong style="font-family:'Red Hat Display',sans-serif;font-weight:500;color:#F2C230">Transit:</strong> carriers are coordinated and the client is updated at each handover.</p>
+      </li>
+      <li class="stg">
+        <span class="stg-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 21.5s-6.5-6-6.5-11.5a6.5 6.5 0 0 1 13 0c0 5.5-6.5 11.5-6.5 11.5z"/><circle cx="12" cy="10" r="2.3"/></svg><span class="stg-wipe"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 21.5s-6.5-6-6.5-11.5a6.5 6.5 0 0 1 13 0c0 5.5-6.5 11.5-6.5 11.5z"/><circle cx="12" cy="10" r="2.3"/></svg></span></span>
+        <p style="margin-top:32px;font-size:19px;line-height:1.5;padding-right:8px;text-wrap:balance;color:#ECECE6"><strong style="font-family:'Red Hat Display',sans-serif;font-weight:500;color:#F2C230">Arrival:</strong> documents are closed out and the cargo is delivered.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="ready" aria-labelledby="ready-h" style="padding:152px 80px 0">
+  <div style="max-width:1600px;margin:0 auto">
+    <h2 id="ready-h" style="font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:40px;line-height:1.1;letter-spacing:-0.005em;">Have these ready</h2>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:center">
+      <p style="grid-column:1 / span 6;font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:38px;line-height:1.25;letter-spacing:-0.005em;max-width:24ch;text-wrap:pretty">Cargo type; approximate weight and volume; origin and destination; target dates; any documents already prepared.</p>
+      <div style="grid-column:7 / span 6;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+        <figure data-slot="strap" style="aspect-ratio:1/1;background:#B4B4AC"><div role="img" aria-label="A lashing strap and ratchet holding cargo" style="width:100%;height:100%"></div></figure>
+        <figure data-slot="seal" style="aspect-ratio:1/1;background:#B4B4AC"><div role="img" aria-label="A bolt seal fitted to a container door" style="width:100%;height:100%"></div></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="request" aria-labelledby="request-h" style="padding:152px 80px 0">
+  <div style="max-width:1600px;margin:0 auto">
+    <h2 id="request-h" style="font-family:'Red Hat Display',sans-serif;font-weight:500;font-size:40px;line-height:1.1;letter-spacing:-0.005em;">Request a route</h2>
+    <p style="font-size:19px;line-height:1.55;margin-top:20px;max-width:62ch;text-wrap:pretty">Movanta replies with a proposed route and conditions.</p>
+    <form style="margin-top:48px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px 32px">
+        <div style="grid-column:span 6;display:flex;flex-direction:column;gap:8px">
+          <label for="f-name" style="font-size:15px;font-weight:500;color:#4D5155">Name</label>
+          <input id="f-name" name="name" type="text" autoComplete="name" placeholder="Your full name" aria-describedby="f-name-err" style="display:block;width:100%;height:56px;border:0;border-radius:10px;background:#F6F5F2;font-family:inherit;font-size:18px;color:#2B2A27;padding:14px 18px;">
+          <p id="f-name-err" class="err"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#F2C230;box-shadow:0 0 0 1px #1E2124;visibility:hidden"></span></p>
+        </div>
+        <div style="grid-column:span 6;display:flex;flex-direction:column;gap:8px">
+          <label for="f-company" style="font-size:15px;font-weight:500;color:#4D5155">Company</label>
+          <input id="f-company" name="company" type="text" autoComplete="organization" placeholder="Company name" aria-describedby="f-company-err" style="display:block;width:100%;height:56px;border:0;border-radius:10px;background:#F6F5F2;font-family:inherit;font-size:18px;color:#2B2A27;padding:14px 18px;">
+          <p id="f-company-err" class="err"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#F2C230;box-shadow:0 0 0 1px #1E2124;visibility:hidden"></span></p>
+        </div>
+        <div style="grid-column:span 6;display:flex;flex-direction:column;gap:8px">
+          <label for="f-email" style="font-size:15px;font-weight:500;color:#4D5155">Email</label>
+          <input id="f-email" name="email" type="email" autoComplete="email" autoCapitalize="off" spellCheck="false" placeholder="Where the proposal should go" aria-describedby="f-email-err" style="display:block;width:100%;height:56px;border:0;border-radius:10px;background:#F6F5F2;font-family:inherit;font-size:18px;color:#2B2A27;padding:14px 18px;">
+          <p id="f-email-err" class="err"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#F2C230;box-shadow:0 0 0 1px #1E2124;visibility:hidden"></span></p>
+        </div>
+        <div style="grid-column:span 6;display:flex;flex-direction:column;gap:8px">
+          <label for="f-route" style="font-size:15px;font-weight:500;color:#4D5155">From / To</label>
+          <input id="f-route" name="route" type="text" placeholder="Place of loading, place of delivery" aria-describedby="f-route-err" style="display:block;width:100%;height:56px;border:0;border-radius:10px;background:#F6F5F2;font-family:inherit;font-size:18px;color:#2B2A27;padding:14px 18px;">
+          <p id="f-route-err" class="err"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#F2C230;box-shadow:0 0 0 1px #1E2124;visibility:hidden"></span></p>
+        </div>
+        <div style="grid-column:span 12;display:flex;flex-direction:column;gap:8px">
+          <label for="f-cargo" style="font-size:15px;font-weight:500;color:#4D5155">Cargo</label>
+          <textarea id="f-cargo" name="cargo" rows="3" placeholder="What is shipped, roughly how much" aria-describedby="f-cargo-err" style="display:block;width:100%;border:0;border-radius:10px;background:#F6F5F2;font-family:inherit;font-size:18px;line-height:1.5;resize:none;color:#2B2A27;padding:14px 18px;"></textarea>
+          <p id="f-cargo-err" class="err"><span aria-hidden="true" style="flex:none;width:8px;height:8px;background:#F2C230;box-shadow:0 0 0 1px #1E2124;visibility:hidden"></span></p>
+        </div>
+        <div style="grid-column:span 12;display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px;margin-top:16px">
+          <button type="submit" class="btn-send" style="border:2px solid #1E2124;border-radius:10px;background:#F2C230;color:#2B2A27;font-family:'Red Hat Text',sans-serif;font-size:16px;font-weight:600;padding:15px 26px;cursor:pointer">Get a route proposal</button>
+          <p role="status" aria-live="polite" style="min-height:1.5em;font-size:18px;line-height:1.5;font-weight:500"></p>
+        </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer style="position:relative;z-index:2;margin-top:152px;background:#1E2124;color:#D6D6D0;padding:56px 80px 64px">
+  <div style="max-width:1600px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:24px 56px">
+    <img src="assets/logo-light.png" alt="Movanta" style="height:36px;width:auto;display:block;margin-right:auto">
+    <p style="font-size:17px;font-weight:600">Movanta Limited, Mauritius.</p>
+    <p style="font-size:17px">Freight forwarding and transport coordination.</p>
+    <a href="#top" style="font-size:17px;color:#D6D6D0;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px">Privacy</a>
+  </div>
+</footer>
+</div>
+<script>
+(()=>{
+  const v=document.getElementById('clip'), scene=document.getElementById('scene'), track=document.getElementById('track');
+  const strip=document.getElementById('strip'), txt=document.getElementById('heroTxt');
+  const sweeps=[...strip.querySelectorAll('.card')];
+  const A=2.4; let B=1.6, dur=6, cur=0, seeking=false;
+
+  (()=>{
+    const go=(smooth)=>{ const vh=innerHeight; scrollTo({top:Math.round((A+0.75*B)*vh),behavior:smooth?'smooth':'auto'}); };
+    document.querySelectorAll('a[href="#modes"]').forEach(a=>a.addEventListener('click',ev=>{ev.preventDefault(); go(!matchMedia('(prefers-reduced-motion: reduce)').matches); history.replaceState(null,'','#modes');}));
+    if(location.hash==='#modes') addEventListener('load',()=>go(false));
+  })();
+  const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+  const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+  let vw,vh;
+  function layout(){
+    vw=innerWidth; vh=innerHeight;
+    B=(strip.scrollWidth+0.45*vw)/vw*1.1;
+    track.style.height=((1+A+B)*vh)+'px';
+  }
+  function frame(){
+    const y=scrollY, q=clamp(y/(A*vh)), r=clamp((y-A*vh)/(B*vh));
+    if(v.duration) dur=v.duration;
+    const target=q*(dur-1/48); cur+=(target-cur)*0.2;
+    if(seeking && performance.now()-seekAt>500) seeking=false;
+    if(v.readyState>=1 && !seeking && Math.abs(v.currentTime-cur)>1/60){ seeking=true; seekAt=performance.now(); v.currentTime=cur; }
+    const sc=Math.max(vw/1280,vh/720), w=1280*sc, h=720*sc, x=Math.min(0,vw-0.97*w), top=(vh-h)*0.6;
+    const G=Math.max(80,(document.documentElement.clientWidth-1600)/2), stackX=x+0.344*w, TL=Math.max(80,Math.min(G,stackX-48-400));
+    scene.style.setProperty('--g',G+'px'); txt.style.left=TL+'px';
+    const tw=Math.max(300,Math.min(440,stackX-TL-48)); txt.style.setProperty('--tw',tw+'px');
+    v.style.cssText=`left:${x}px;top:${top}px;width:${w}px;height:${h}px`;
+    const f=clamp((q-0.28)/0.16); txt.style.opacity=1-f; txt.style.transform=`translateY(${-40*f}px)`; txt.style.visibility=f>=1?'hidden':'visible';
+    const ri=ease(clamp(r/0.55)); strip.style.transform=`translateX(${vw+(G-vw)*ri}px)`;
+    for(const c of sweeps){ const L=c.getBoundingClientRect().left; const s=clamp((0.98-L/vw)/0.3+ri,-0.4,1.6)*100; c.style.setProperty('--s',s+'%'); }
+    requestAnimationFrame(frame);
+  }
+  let seekAt=0;
+  v.addEventListener('seeked',()=>{seeking=false});
+  fetch('media/handover-k4r2-cut.mp4').then(r=>r.blob()).then(b=>{v.src=URL.createObjectURL(b);v.load();}).catch(()=>{v.src='media/handover-k4r2-cut.mp4'});
+  v.addEventListener('loadedmetadata',()=>{dur=v.duration});
+  addEventListener('resize',layout); layout(); requestAnimationFrame(frame);
+})();
+
+(()=>{
+  const ol=document.getElementById('stg'); if(!ol) return;
+  const items=[...ol.querySelectorAll('.stg')], dots=items.map(li=>li.querySelector('.stg-dot'));
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let centers=[];
+  function measure(){
+    const o=ol.getBoundingClientRect().left;
+    centers=dots.map(d=>{const r=d.getBoundingClientRect();return r.left+r.width/2-o});
+    ol.style.setProperty('--trk',(centers[centers.length-1]-centers[0])+'px');
+  }
+  function tick(){
+    const vh=innerHeight, top=ol.getBoundingClientRect().top;
+    const p=reduce?1:Math.min(1,Math.max(0,(vh*0.8-top)/(vh*0.45)));
+    ol.style.setProperty('--p',p);
+    const reach=centers[0]+p*(centers[centers.length-1]-centers[0]);
+    const last=items.length-1;
+    items.forEach((li,i)=>{ const w=i===0?1:(reach-(centers[i]-32))/(i===last?32:64); li.style.setProperty('--w',Math.min(1,Math.max(0,w))); });
+  }
+  addEventListener('resize',()=>{measure();tick()}); addEventListener('scroll',tick,{passive:true});
+  measure(); tick();
+})();
+
+(()=>{
+  const form=document.querySelector('#request form'); if(!form) return;
+  form.noValidate=true;
+  const keys=['name','company','email','route','cargo'], ring='0 0 0 2px #1E2124 inset';
+  const status=form.querySelector('[role="status"]');
+  let tried=false;
+  const val=k=>document.getElementById('f-'+k).value;
+  function validate(){
+    const e={};
+    if(!val('name').trim()) e.name='Enter your name.';
+    const m=val('email').trim();
+    if(!m) e.email='Enter an email address.';
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)) e.email='Email needs an @ and a domain.';
+    if(!val('route').trim()) e.route='Enter where from and where to.';
+    if(!val('cargo').trim()) e.cargo='Describe the cargo briefly.';
+    return e;
+  }
+  function paint(e){
+    for(const k of keys){
+      const inp=document.getElementById('f-'+k), p=document.getElementById('f-'+k+'-err'), mark=p.querySelector('span');
+      const msg=e[k]||'';
+      inp.style.boxShadow=msg?ring:'none'; inp.setAttribute('aria-invalid',msg?'true':'false');
+      mark.style.visibility=msg?'visible':'hidden';
+      [...p.childNodes].filter(n=>n!==mark).forEach(n=>n.remove()); if(msg) p.append(msg);
+    }
+  }
+  keys.forEach(k=>document.getElementById('f-'+k).addEventListener('input',()=>{status.textContent=''; if(tried) paint(validate());}));
+  form.addEventListener('submit',ev=>{
+    ev.preventDefault();
+    const e=validate(), first=['name','email','route','cargo'].find(k=>e[k]);
+    if(first){ tried=true; status.textContent=''; paint(e); document.getElementById('f-'+first).focus(); }
+    else { tried=false; paint({}); keys.forEach(k=>document.getElementById('f-'+k).value=''); status.textContent='Request sent. A proposed route and conditions will come to the email you entered.'; }
+  });
+})();
+
+</script>
+</body></html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Meridion Trade Limited — Building Materials, Timber and Metal Structures, Hong Kong</title>
+<meta name="description" content="Building materials, timber, metal structures and construction equipment supplied to building and infrastructure projects. Meridion Trade Limited, Hong Kong.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carbon:#16130F;
+  --on-dark:#FFFFFF;
+  --on-dark-soft:#BDB6AE;
+  --concrete:#FFFFFF;
+  --paper:#F1EEE9;
+  --slab:#DAD5CE;
+  --ink:#16130F;
+  --ink-soft:#544D47;
+  --line:#C9C3BB;
+  --red:#D8232F;
+  --red-deep:#B01822;
+  --wrap:1280px;
+  --gut:clamp(20px,4vw,56px);
+  --hdr:72px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + 8px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--concrete);color:var(--ink);font-family:"Archivo",system-ui,sans-serif;font-size:18px;line-height:1.55;font-stretch:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;caret-color:var(--red)}
+::selection{background:var(--red);color:#fff}
+a{color:inherit}
+img,svg{display:block}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.num{font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+
+.site{position:sticky;top:0;z-index:20;background:var(--carbon);color:var(--on-dark)}
+.site .wrap{height:var(--hdr);display:flex;align-items:center;gap:56px}
+.site .logo{flex:none;display:block;line-height:0}
+.site .logo img{height:26px;width:auto}
+.site nav ul{display:flex;gap:36px;list-style:none;margin:0;padding:0}
+.site nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--on-dark-soft);transition:color .2s}
+.site nav a:hover{color:var(--on-dark)}
+.top-cta{margin-left:auto;visibility:hidden;opacity:0;transform:translateY(-4px);transition:opacity .3s var(--ease),transform .3s var(--ease),visibility 0s .3s}
+.site.has-cta .top-cta{visibility:visible;opacity:1;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;height:48px;padding:0 24px;background:var(--red);color:#fff;font:inherit;font-size:16px;font-weight:600;font-stretch:108%;letter-spacing:.005em;text-decoration:none;border:0;border-radius:4px;cursor:pointer;white-space:nowrap;transition:background .2s}
+.btn:hover{background:var(--red-deep)}
+.btn.sm{height:40px;padding:0 18px;font-size:15px}
+
+.photo{position:relative;background:var(--slab) center/cover no-repeat;border-radius:4px}
+.photo.dark{background-color:#2C2723}
+.p-hero{background-image:url(images/hero.webp);background-position:center 30%}
+.p-building{background-image:url(images/mat-building.webp)}
+.p-timber{background-image:url(images/mat-timber.webp)}
+.p-metal{background-image:url(images/mat-metal.webp)}
+.p-equipment{background-image:url(images/mat-equipment.webp)}
+.p-procedure{background-image:url(images/procedure.webp)}
+.p-company{background-image:url(images/company.webp);background-position:center 40%}
+
+.hero{position:relative;color:var(--on-dark);background:var(--carbon);min-height:calc(100svh - var(--hdr));max-height:960px;display:flex;flex-direction:column;overflow:hidden}
+.hero .photo{position:absolute;inset:0;border-radius:0}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,19,15,0) 45%,rgba(22,19,15,.6) 72%,rgba(22,19,15,.92) 100%)}
+.hero-body{position:relative;width:100%;margin-top:auto;padding-top:120px;padding-bottom:40px}
+.hero h1{margin:0;max-width:24ch;font-size:clamp(38px,4vw,57px);line-height:1.04;font-weight:500;font-stretch:118%;letter-spacing:-.025em;text-wrap:balance}
+.hero-row{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-top:32px}
+.hero-sub{margin:0;max-width:44ch;font-size:20px;line-height:1.5;color:#E3DED8}
+.cats{position:relative;padding-bottom:24px}
+.cats ul{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;list-style:none;margin:0 auto;padding:0 var(--gut)}
+.cats a{display:flex;align-items:baseline;gap:12px;padding:18px 0 4px;border-top:1px solid rgba(255,255,255,.24);text-decoration:none;font-size:17px;font-weight:500;color:#EDE8E2;transition:color .2s,border-color .2s}
+.cats a:hover{color:#fff;border-top-color:var(--red)}
+.cats .num{color:var(--on-dark-soft);font-size:14px}
+
+.sec{padding:120px 0}
+.h2{margin:0;font-size:clamp(34px,3.6vw,52px);line-height:1.05;font-weight:600;font-stretch:112%;letter-spacing:-.022em}
+.h2 .num{font-weight:400;color:var(--ink-soft);margin-right:.25em}
+
+#scope{background:var(--concrete)}
+.scope-head{margin-bottom:56px}
+.catalogue{display:grid;gap:56px;list-style:none;margin:0;padding:0}
+.catalogue li{display:grid;grid-template-columns:7fr 5fr;gap:56px;align-items:end}
+.catalogue .photo{aspect-ratio:3/2}
+.catalogue .meta{padding-bottom:8px}
+.catalogue .code{display:block;font-size:18px;color:var(--red-deep);font-weight:600;margin-bottom:12px}
+.catalogue b{display:block;font-size:clamp(30px,3vw,44px);line-height:1.05;font-weight:500;font-stretch:115%;letter-spacing:-.02em;margin-bottom:18px}
+.catalogue p{margin:0;max-width:30ch;font-size:20px;line-height:1.5;color:var(--ink-soft)}
+
+#procedure{background:var(--paper)}
+.proc{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.proc .photo{aspect-ratio:1/1}
+.proc .h2{margin-bottom:48px}
+.steps{display:grid;gap:8px;list-style:none;margin:0;padding:0}
+.steps li{display:grid;grid-template-columns:72px 1fr;gap:16px;padding:26px 28px;background:#FFFFFF;border-radius:4px}
+.steps .num{font-size:20px;font-weight:600;color:var(--red-deep);line-height:1.45}
+.steps p{margin:0;font-size:21px;line-height:1.45}
+
+#company{background:var(--carbon);color:var(--on-dark);padding-bottom:0}
+#company .h2 .num{color:var(--on-dark-soft)}
+.co{display:grid;grid-template-columns:4fr 8fr;gap:72px;align-items:start;padding-bottom:96px}
+.co p{margin:0;font-size:clamp(24px,2.3vw,32px);line-height:1.35;font-weight:400;letter-spacing:-.01em;color:#EDE8E2;text-wrap:pretty}
+#company .band{aspect-ratio:21/8;max-height:480px;width:100%;border-radius:0}
+
+#contact{background:var(--concrete)}
+.form-grid{display:grid;grid-template-columns:4fr 8fr;gap:72px;align-items:start}
+.form-grid .h2{position:sticky;top:calc(var(--hdr) + 32px);font-size:clamp(36px,4vw,60px)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:28px 24px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.wide{grid-column:1/-1}
+.f label{font-size:15px;font-weight:500}
+.f input,.f textarea{font:inherit;font-size:17px;color:var(--ink);background:#F6F4F0;border:1px solid var(--line);border-radius:4px;padding:15px 16px;transition:border-color .2s}
+.f textarea{min-height:150px;resize:vertical}
+.f input:hover,.f textarea:hover{border-color:#8D857D}
+.f input:focus,.f textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 1px var(--ink)}
+.f .err{display:none;font-size:14px;color:var(--red-deep)}
+.f.bad input,.f.bad textarea{border-color:var(--red-deep);box-shadow:0 0 0 1px var(--red-deep)}
+.f.bad .err{display:block}
+.consent label{cursor:pointer}
+.consent{grid-column:1/-1;display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:start;font-size:16px;line-height:1.5;color:var(--ink-soft)}
+.consent input{appearance:none;width:22px;height:22px;margin:1px 0 0;border:1px solid #8D857D;background:#F6F4F0;border-radius:4px;cursor:pointer;display:grid;place-content:center}
+.consent input:checked{background:var(--ink);border-color:var(--ink)}
+.consent input:checked::after{content:"";width:11px;height:6px;border:2px solid #fff;border-top:0;border-right:0;transform:translateY(-1px) rotate(-45deg)}
+.consent.bad input{border-color:var(--red-deep);box-shadow:0 0 0 1px var(--red-deep)}
+.consent .err{grid-column:2;display:none;font-size:14px;color:var(--red-deep)}
+.consent.bad .err{display:block}
+.consent a{text-underline-offset:3px}
+.submit-row{grid-column:1/-1;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.note{font-size:15px;color:var(--ink-soft);margin:0}
+
+footer{background:var(--carbon);color:var(--on-dark-soft);padding:48px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+footer img{height:24px;width:auto}
+footer p{margin:0;font-size:15px}
+footer a{text-underline-offset:3px}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero .photo{animation:settle 1.8s var(--ease) both}
+  @keyframes settle{from{transform:scale(1.06)}to{transform:none}}
+}
+
+@media (max-width:1100px){
+  .catalogue li{grid-template-columns:1fr 1fr;gap:32px}
+  .proc,.co,.form-grid{grid-template-columns:1fr;gap:40px}
+  .form-grid .h2{position:static}
+  .proc .photo{aspect-ratio:16/9}
+  .proc .h2{margin-bottom:32px}
+  .cats a{padding:16px 14px;font-size:16px}
+}
+
+@media (max-width:720px){
+  :root{--hdr:92px}
+  body{font-size:17px}
+  .site .wrap{height:auto;flex-wrap:wrap;gap:0 16px;padding-top:12px;padding-bottom:10px}
+  .site .logo{height:38px;display:flex;align-items:center}
+  .site nav{order:3;width:100%;padding-top:6px}
+  .site nav ul{gap:22px}
+  .site nav a{font-size:14px}
+  .top-cta{align-self:center}
+  .site .logo img{height:22px}
+  .top-cta.btn.sm{height:38px;padding:0 14px;font-size:14px;gap:8px}
+  .hero{min-height:calc(100svh - var(--hdr))}
+  .hero h1{font-size:clamp(32px,8.6vw,40px);font-stretch:106%}
+  .hero-body{padding-bottom:32px}
+  .hero-row{flex-direction:column;align-items:flex-start;gap:24px;margin-top:20px}
+  .hero-sub{font-size:17px}
+  .hero .btn{width:100%}
+  .cats{display:none}
+  .sec{padding:72px 0}
+  .scope-head{margin-bottom:32px}
+  .catalogue{gap:48px}
+  .catalogue li{grid-template-columns:1fr;gap:20px}
+  .catalogue .photo{aspect-ratio:16/10}
+  .catalogue b{font-size:30px;margin-bottom:10px}
+  .catalogue p{font-size:18px}
+  .steps li{grid-template-columns:44px 1fr;padding:20px 18px}
+  .steps p{font-size:18px}
+  .co{padding-bottom:56px}
+  #company .band{aspect-ratio:4/3}
+  form{grid-template-columns:1fr;gap:22px}
+  .submit-row .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header class="site" id="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Meridion Trade Limited, back to top"><img src="brand/logo-white.svg" alt="Meridion" width="104" height="26"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#scope">Scope of supply</a></li>
+        <li><a href="#procedure">Procedure</a></li>
+        <li><a href="#company">Company</a></li>
+      </ul>
+    </nav>
+    <a class="btn sm top-cta" href="#contact" tabindex="-1" aria-hidden="true">Submit a specification</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+  <div class="photo dark p-hero" role="img" aria-label="Materials delivered to a Hong Kong construction site"></div>
+  <div class="shade"></div>
+  <div class="hero-body wrap">
+    <h1 id="h1">Meridion Trade Limited supplies materials to construction and infrastructure projects.</h1>
+    <div class="hero-row">
+      <p class="hero-sub">Building materials, timber, metal structures and associated equipment, for projects large and small.</p>
+      <a class="btn" id="hero-cta" href="#contact">Submit a specification</a>
+    </div>
+  </div>
+  <nav class="cats" aria-label="Scope of supply">
+    <ul class="wrap">
+      <li><a href="#s11"><span class="num">1.1</span>Building materials</a></li>
+      <li><a href="#s12"><span class="num">1.2</span>Timber</a></li>
+      <li><a href="#s13"><span class="num">1.3</span>Metal products</a></li>
+      <li><a href="#s14"><span class="num">1.4</span>Equipment</a></li>
+    </ul>
+  </nav>
+</section>
+
+<section class="sec" id="scope" aria-labelledby="h-scope">
+  <div class="wrap">
+    <div class="scope-head">
+      <h2 class="h2" id="h-scope"><span class="num">1.</span>Scope of supply</h2>
+    </div>
+    <ul class="catalogue">
+      <li id="s11">
+        <div class="photo p-building" role="img" aria-label="Cement bags, blocks, aggregate"></div>
+        <div class="meta"><span class="code num">1.1</span><b>Building materials:</b><p>cement, aggregates, blocks, insulation and finishing materials.</p></div>
+      </li>
+      <li id="s12">
+        <div class="photo p-timber" role="img" aria-label="Sawn timber, plywood, OSB"></div>
+        <div class="meta"><span class="code num">1.2</span><b>Timber:</b><p>sawn timber, plywood, OSB and formwork panels.</p></div>
+      </li>
+      <li id="s13">
+        <div class="photo p-metal" role="img" aria-label="Rebar bundles, steel sections"></div>
+        <div class="meta"><span class="code num">1.3</span><b>Metal products:</b><p>reinforcing steel, structural sections, profiles and fixings.</p></div>
+      </li>
+      <li id="s14">
+        <div class="photo p-equipment" role="img" aria-label="Scaffolding, formwork system"></div>
+        <div class="meta"><span class="code num">1.4</span><b>Equipment:</b><p>scaffolding, formwork systems and related products for construction and technical use.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="procedure" aria-labelledby="h-proc">
+  <div class="wrap proc">
+    <div class="photo p-procedure" role="img" aria-label="Tower crane lifting a bundle of reinforcing bars on site"></div>
+    <div>
+      <h2 class="h2" id="h-proc"><span class="num">2.</span>Procedure</h2>
+      <ol class="steps">
+        <li><span class="num">2.1</span><p>The client provides a specification: materials, quantities and the project programme.</p></li>
+        <li><span class="num">2.2</span><p>Meridion reviews the specification, raises any queries and puts forward suitable alternatives where relevant.</p></li>
+        <li><span class="num">2.3</span><p>Commercial terms are agreed for the project.</p></li>
+        <li><span class="num">2.4</span><p>Deliveries may be scheduled in stages in line with the construction programme.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="company" aria-labelledby="h-co">
+  <div class="wrap co">
+    <h2 class="h2" id="h-co"><span class="num">3.</span>Company</h2>
+    <p>The Company serves contractors, developers and infrastructure operators. Sourcing is spread across a number of suppliers, which allows the Company to cover a wide range of categories and to match supply to the scale of each project.</p>
+  </div>
+  <div class="photo dark band p-company" role="img" aria-label="Materials yard, stock ready for dispatch"></div>
+</section>
+
+<section class="sec" id="contact" aria-labelledby="h-form">
+  <div class="wrap form-grid">
+    <h2 class="h2" id="h-form">Submit a specification</h2>
+    <form novalidate>
+      <div class="f"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required aria-describedby="e-name"><span class="err" id="e-name">Enter your name.</span></div>
+      <div class="f"><label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization" required aria-describedby="e-co"><span class="err" id="e-co">Enter your company.</span></div>
+      <div class="f wide"><label for="f-contact">Email / telephone</label><input id="f-contact" name="contact" type="text" inputmode="email" autocomplete="off" required aria-describedby="e-contact"><span class="err" id="e-contact">Enter an email address or a telephone number.</span></div>
+      <div class="f wide"><label for="f-proj">Project and materials</label><textarea id="f-proj" name="project" required aria-describedby="e-proj"></textarea><span class="err" id="e-proj">Describe the project and the materials required.</span></div>
+      <div class="consent"><input type="checkbox" id="f-ok" required aria-describedby="e-ok"><label for="f-ok">I consent to the processing of my personal data in accordance with the <a href="#">Privacy Policy</a></label><span class="err" id="e-ok">Consent is required to send the form.</span></div>
+      <div class="submit-row">
+        <button class="btn" type="submit">Submit</button>
+        <p class="note" id="form-note" role="status" hidden>Preview only: the form is not sent anywhere.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="brand/logo-white.svg" alt="Meridion" width="96" height="24">
+    <p>Meridion Trade Limited, Hong Kong SAR · <a href="#">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const head = document.querySelector('.site'), cta = document.getElementById('hero-cta'), top = head.querySelector('.top-cta');
+  new IntersectionObserver(([e]) => {
+    const on = !e.isIntersecting && e.boundingClientRect.top < 0;
+    head.classList.toggle('has-cta', on);
+    top.tabIndex = on ? 0 : -1;
+    top.setAttribute('aria-hidden', on ? 'false' : 'true');
+  }, {rootMargin: `-${head.offsetHeight}px 0px 0px 0px`}).observe(cta);
+})();
+(() => {
+  const form = document.querySelector('#contact form'), note = document.getElementById('form-note');
+  const check = el => { const box = el.closest('.f,.consent'); const ok = el.type === 'checkbox' ? el.checked : el.value.trim() !== ''; box.classList.toggle('bad', !ok); el.setAttribute('aria-invalid', ok ? 'false' : 'true'); return ok; };
+  form.addEventListener('submit', ev => {
+    ev.preventDefault();
+    const fields = [...form.querySelectorAll('[required]')];
+    const bad = fields.filter(el => !check(el));
+    if (bad.length) { bad[0].focus(); note.hidden = true; return; }
+    note.hidden = false;
+  });
+  form.addEventListener('input', ev => { if (ev.target.closest('.bad')) check(ev.target); });
+  form.addEventListener('change', ev => { if (ev.target.type === 'checkbox' && ev.target.closest('.bad')) check(ev.target); });
+})();
+</script>
+</body>
+</html>

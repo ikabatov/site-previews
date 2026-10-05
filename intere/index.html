@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Intere — computers, electronics and AV for business (Hong Kong)</title>
+<meta name="description" content="Laptops, monitors, conference room AV, networking kit and components for businesses, supplied from Hong Kong.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#FFFFFF;color:#15302F;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:#15302F;text-decoration-color:#1F8A8A;text-underline-offset:5px}
+a:hover{color:#15302F;text-decoration-thickness:2px}
+:focus-visible{outline:3px solid #1F8A8A;outline-offset:3px}
+::placeholder{color:#15302F;opacity:.72}
+[id]{scroll-margin-top:16px}
+form [id]{scroll-margin-top:136px}
+body>div,.sc-host{height:auto !important}
+[data-slot="scene-desks"]{background:#DDE3E1 url(images/scene-desks.webp) center/cover no-repeat !important}
+[data-slot="scene-room"]{background:#DDE3E1 url(images/scene-room.webp) center/cover no-repeat !important}
+[data-slot="scene-studio"]{background:#DDE3E1 url(images/scene-studio.webp) center/cover no-repeat !important}
+.in-orders{margin:0 12px 12px;background:#EEF1F0;padding:96px 52px 96px}
+.in-orders h2{font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em;margin-bottom:40px}
+.in-orders-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.in-scene{position:relative}
+.in-scene p{margin-top:16px;font-size:18px;line-height:28px;max-width:40ch;text-wrap:pretty}
+.in-sell{margin:0 12px 12px;background:radial-gradient(60% 70% at 50% 75%,rgba(47,179,166,.14),transparent 70%),#122826;color:#F2F2F0;padding:96px 52px 96px}
+.in-sell h2{font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em;margin-bottom:40px}
+.in-sell ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;isolation:isolate}
+.in-sell h2{color:#F2F2F0}
+.in-card{position:relative;display:flex;flex-direction:column;background:#FFFFFF;transition:transform .2s ease,box-shadow .2s ease}
+.in-card::before{content:"";position:absolute;top:0;bottom:0;left:30px;width:2px;background:#1F8A8A;z-index:1}
+.in-card::after{content:"";position:absolute;top:66px;bottom:0;right:44px;width:1px;background:#D3DCDA}
+.in-card:hover{transform:translateY(-4px);box-shadow:0 2px 4px rgba(0,0,0,.12),0 22px 40px -14px rgba(0,0,0,.55)}
+.in-ico{display:flex;align-items:center;height:66px;padding-left:48px;border-bottom:2px solid #15302F}
+.in-card svg{width:30px;height:30px;stroke:#1F8A8A;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.in-card ol{list-style:none;margin:0;padding:0 0 10px}
+.in-card li{height:42px;display:flex;align-items:flex-end;padding:0 56px 9px 48px;border-bottom:1px solid #D3DCDA;font-size:18px;line-height:22px;font-weight:500;color:#15302F;white-space:nowrap}
+.in-faq{margin:0 12px 12px;background:#E9EFED;padding:96px 52px 96px}
+.in-faq h2{font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em;margin-bottom:40px}
+.in-faq dl{margin:0;border-bottom:1px solid #B9C6C4}
+.in-faq-row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;padding:28px 0 32px;border-top:1px solid #B9C6C4}
+.in-faq dt{grid-column:1 / span 5;font-size:22px;line-height:30px;font-weight:600;letter-spacing:-0.01em;text-wrap:balance}
+.in-faq dd{grid-column:7 / span 6;margin:0;font-size:20px;line-height:30px;text-wrap:pretty}
+.in-send{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center;margin:0 12px 12px;background:#EEF1F0;padding:96px 52px 104px}
+.in-send h2{font-size:39px;line-height:44px;font-weight:600;letter-spacing:-0.025em}
+.in-row{display:grid;grid-template-columns:150px minmax(0,1fr);align-items:end;column-gap:16px;padding:0 24px;border-bottom:1px solid #B9C6C4}
+.in-row label{padding-bottom:12px;font-size:16px;line-height:22px;font-weight:600;color:#46605D}
+.in-row input{height:52px;padding:0;border:0;border-radius:0;background:transparent;font:inherit;font-size:20px;color:#15302F}
+.in-row input:focus-visible{outline:none}
+.in-row:focus-within{background:#F2F6F5}
+.in-err{margin:10px 24px 0;font-size:16px;line-height:24px;font-weight:600;border-left:3px solid #1F8A8A;padding-left:12px}
+.in-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.in-lines polyline{fill:none;stroke:#15302F;stroke-width:.14;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .6s cubic-bezier(.4,0,.2,1)}
+.in-dot{position:absolute;width:11px;height:11px;margin:-5.5px 0 0 -5.5px;border-radius:50%;background:#FFFFFF;border:2px solid #1F8A8A;opacity:0;transition:opacity .25s ease}
+.in-lab{position:absolute;transform:translateY(-50%);padding:4px 10px 4px 8px;background:#FFFFFF;border-left:3px solid #1F8A8A;font-size:14px;line-height:20px;font-weight:600;white-space:nowrap;opacity:0;transition:opacity .3s ease}
+.in-lab-l{transform:translate(-100%,-50%)}
+[data-tags="on"] .in-dot,[data-tags="on"] .in-lab{opacity:1}
+[data-tags="on"] .in-lines polyline{stroke-dashoffset:0}
+.in-live{position:relative;display:block;width:100%;height:416px;margin:0;padding:0 112px 0 84px;border:0;border-top:2px solid #15302F;border-radius:0;resize:none;font:inherit;font-size:20px;line-height:52px;color:#15302F;background-color:transparent;background-image:linear-gradient(to bottom,transparent 51px,#B9C6C4 51px);background-size:100% 52px;background-attachment:local}
+.in-live::placeholder{color:#46605D;opacity:.75}
+.in-live:focus-visible{outline:none}
+.in-sheet-live:focus-within .in-sheet-page{box-shadow:0 0 0 3px rgba(31,138,138,.35)}
+.in-live-foot{position:relative;display:flex;justify-content:flex-end;padding:20px 24px;border-top:2px solid #15302F;background:#FFFFFF}
+.in-btn{display:inline-flex;align-items:stretch;height:52px;background:#177878;color:#FFFFFF;font:inherit;font-size:16px;font-weight:600;text-decoration:none;border:0;border-radius:0;cursor:pointer;transition:background-color .16s ease}
+.in-btn:hover{background:#126262;color:#FFFFFF}
+.in-btn-t{display:flex;align-items:center;padding:0 22px}
+.in-btn-a{display:flex;align-items:center;justify-content:center;width:52px;border-left:1px solid rgba(255,255,255,.4)}
+.in-btn-a span{display:block;transition:transform .16s ease}
+.in-btn:hover .in-btn-a span{transform:translateX(4px)}
+.in-hero{margin:0 12px 12px;background:#E9EFED;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center;padding:96px 52px 96px}
+.in-hero h1{font-size:64px;line-height:62px;font-weight:700;letter-spacing:-0.035em}
+.in-hero h1 span{display:block}
+.in-sheet{position:relative;padding-top:14px}
+.in-sheet-clip{position:absolute;top:0;left:50%;width:128px;height:28px;margin-left:-64px;background:#1F8A8A;border-radius:3px;z-index:1}
+.in-sheet-page{position:relative;background:#FFFFFF;border:1px solid #15302F;border-radius:2px;padding:56px 0 48px}
+.in-sheet-margin{position:absolute;top:0;bottom:0;left:64px;width:2px;background:#1F8A8A}
+.in-sheet-qty{position:absolute;top:56px;bottom:0;right:96px;width:1px;background:#B9C6C4}
+@media (prefers-reduced-motion: reduce){*{transition:none !important}}
+</style>
+</helmet>
+
+<header id="top" data-screen-label="Header" style="position:relative;z-index:10">
+  <div id="nav-bar" style="min-height:76px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 40px;padding:12px 64px;background:#FFFFFF">
+    <a href="#top" style="display:block;text-decoration:none"><img src="brand/logo-ink.svg" alt="INTERE" width="126" height="24" style="display:block;width:126px;height:24px"></a>
+    <nav aria-label="Main" style="margin-left:auto">
+      <ul style="display:flex;flex-wrap:wrap;gap:8px 36px;list-style:none;padding:0">
+        <li><a href="#orders" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">Typical orders</a></li>
+        <li><a href="#sell" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">What we sell</a></li>
+        <li><a href="#faq" style="font-size:16px;line-height:24px;font-weight:500;text-decoration:none" style-hover="text-decoration:underline">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="hero-h" data-screen-label="Hero" class="in-hero">
+    <div style="grid-column:1 / span 6">
+      <h1 id="hero-h"><span>Kitting out an office?</span> <span>Send us the list.</span></h1>
+      <p style="margin-top:28px;max-width:44ch;font-size:20px;line-height:30px;text-wrap:pretty">Intere supplies computers, electronics, audio-visual equipment and components to businesses, from standard laptops to specialist hardware.</p>
+    </div>
+    <div class="in-sheet in-sheet-live" style="grid-column:8 / span 5">
+      <div class="in-sheet-clip" aria-hidden="true"></div>
+      <div class="in-sheet-page" style="padding-bottom:0">
+        <div class="in-sheet-margin" aria-hidden="true"></div>
+        <div class="in-sheet-qty" aria-hidden="true"></div>
+        <textarea id="hero-list" class="in-live" name="hero-list" aria-label="Your list, or a description of the task" placeholder="Your list, or a description of the task" value="{{ message }}" onChange="{{ onMessage }}"></textarea>
+        <div class="in-live-foot"><a id="hero-cta" class="in-btn" href="#contact" onClick="{{ goForm }}"><span class="in-btn-t">Send a list</span><span class="in-btn-a" aria-hidden="true"><span>→</span></span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="orders" aria-labelledby="orders-h" data-screen-label="Typical orders" class="in-orders">
+    <h2 id="orders-h">Typical orders</h2>
+    <div class="in-orders-grid" ref="{{ tagsRef }}" data-tags="{{ tagsState }}">
+      <figure class="in-scene" style="grid-column:1 / span 8;grid-row:1 / span 2">
+        <div style="position:relative;aspect-ratio:4 / 3">
+          <div data-slot="scene-desks" role="img" aria-label="A row of new oak desks in an empty office, each with a laptop on a docking station, a monitor, a keyboard and a mouse" style="position:absolute;inset:0;background:#DDE3E1"></div>
+          <svg class="in-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline pathLength="1" points="24,44 27,40 68,40" style="transition-delay:120ms"/><polyline pathLength="1" points="13.4,63 19,53 68,53" style="transition-delay:260ms"/><polyline pathLength="1" points="37,69 39,66 68,66" style="transition-delay:400ms"/><polyline pathLength="1" points="12.5,77 15,80 68,80" style="transition-delay:540ms"/></svg>
+          <span class="in-dot" style="left:24%;top:44%;transition-delay:0ms"></span>
+          <span class="in-dot" style="left:13.4%;top:63%;transition-delay:140ms"></span>
+          <span class="in-dot" style="left:37%;top:69%;transition-delay:280ms"></span>
+          <span class="in-dot" style="left:12.5%;top:77%;transition-delay:420ms"></span>
+          <span class="in-lab" style="left:68%;top:40%;transition-delay:600ms">monitor</span>
+          <span class="in-lab" style="left:68%;top:53%;transition-delay:740ms">laptop</span>
+          <span class="in-lab" style="left:68%;top:66%;transition-delay:880ms">keyboard</span>
+          <span class="in-lab" style="left:68%;top:80%;transition-delay:1020ms">docking station</span>
+        </div>
+        <figcaption><p>A new team starting next month that needs every desk set up.</p></figcaption>
+      </figure>
+      <figure class="in-scene in-scene-side" style="grid-column:9 / span 4;grid-row:1">
+        <div style="position:relative;aspect-ratio:3 / 2">
+          <div data-slot="scene-room" role="img" aria-label="A small meeting room with a wall display, a camera bar above it, two speakers either side and a speakerphone on the table" style="position:absolute;inset:0;background:#DDE3E1"></div>
+          <svg class="in-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline pathLength="1" points="50,27 56,18 79,18" style="transition-delay:120ms"/><polyline pathLength="1" points="34,42 28,33 21,33" style="transition-delay:260ms"/><polyline pathLength="1" points="60,46 66,55 79,55" style="transition-delay:400ms"/></svg>
+          <span class="in-dot" style="left:50%;top:27%;transition-delay:0ms"></span>
+          <span class="in-dot" style="left:34%;top:42%;transition-delay:140ms"></span>
+          <span class="in-dot" style="left:60%;top:46%;transition-delay:280ms"></span>
+          <span class="in-lab" style="left:79%;top:18%;transition-delay:600ms">camera</span>
+          <span class="in-lab in-lab-l" style="left:21%;top:33%;transition-delay:740ms">speakers</span>
+          <span class="in-lab" style="left:79%;top:55%;transition-delay:880ms">screen</span>
+        </div>
+        <figcaption><p>A meeting room that needs a camera, speakers and a screen that work together.</p></figcaption>
+      </figure>
+      <figure class="in-scene in-scene-side" style="grid-column:9 / span 4;grid-row:2;margin-top:24px">
+        <div style="position:relative;aspect-ratio:3 / 2">
+          <div data-slot="scene-studio" role="img" aria-label="A recording corner with a camera on a tripod, a desk with a monitor and a laptop, a microphone arm, a soft-box light and a display on a rolling stand" style="position:absolute;inset:0;background:#DDE3E1"></div>
+          <svg class="in-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline pathLength="1" points="19,57 19,15 24,15" style="transition-delay:120ms"/><polyline pathLength="1" points="37.5,66 37.5,29 43,29" style="transition-delay:260ms"/><polyline pathLength="1" points="84,45 62,45" style="transition-delay:400ms"/></svg>
+          <span class="in-dot" style="left:19%;top:57%;transition-delay:0ms"></span>
+          <span class="in-dot" style="left:37.5%;top:66%;transition-delay:140ms"></span>
+          <span class="in-dot" style="left:84%;top:45%;transition-delay:280ms"></span>
+          <span class="in-lab" style="left:24%;top:15%;transition-delay:600ms">camera</span>
+          <span class="in-lab" style="left:43%;top:29%;transition-delay:740ms">laptop</span>
+          <span class="in-lab in-lab-l" style="left:62%;top:45%;transition-delay:880ms">display</span>
+        </div>
+        <figcaption><p>A content team after kit for recording and presentations.</p></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="sell" aria-labelledby="sell-h" data-screen-label="What we sell" class="in-sell">
+    <h2 id="sell-h">What we sell</h2>
+    <ul>
+      <li class="in-card"><span class="in-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="10.5" rx="1.2"/><path d="M2 18.5h20"/></svg></span><ol aria-label="Laptops, desktops, monitors, keyboards and docking stations"><li>Laptops,</li><li>desktops,</li><li>monitors,</li><li>keyboards</li><li>and docking stations</li></ol></li>
+      <li class="in-card"><span class="in-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="13" width="18" height="6" rx="1.2"/><path d="M7 16h.01M11 16h.01M8 13l-2-6M16 13l2-6"/></svg></span><ol aria-label="Networking and office electronics"><li>Networking</li><li>and office electronics</li><li aria-hidden="true"></li><li aria-hidden="true"></li><li aria-hidden="true"></li></ol></li>
+      <li class="in-card"><span class="in-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="6" rx="3"/><circle cx="12" cy="11" r="1.6"/><path d="M12 14v4M8 19h8"/></svg></span><ol aria-label="Conference cameras, speakerphones, displays and projectors"><li>Conference cameras,</li><li>speakerphones,</li><li>displays</li><li>and projectors</li><li aria-hidden="true"></li></ol></li>
+      <li class="in-card"><span class="in-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v5M11 3v5M5 8h8v3a4 4 0 0 1-8 0V8zM9 15v2a4 4 0 0 0 4 4h2a4 4 0 0 0 4-4V5"/></svg></span><ol aria-label="Cables, adapters, memory and storage"><li>Cables,</li><li>adapters,</li><li>memory</li><li>and storage</li><li aria-hidden="true"></li></ol></li>
+    </ul>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h" data-screen-label="Questions" class="in-faq">
+    <h2 id="faq-h">Questions</h2>
+    <dl>
+      <div class="in-faq-row"><dt>What should the list include?</dt><dd>Model numbers where you have them, quantities and the delivery address.</dd></div>
+      <div class="in-faq-row"><dt>Do you handle specialist hardware?</dt><dd>Yes, alongside standard equipment.</dd></div>
+      <div class="in-faq-row"><dt>I don’t know exactly what I need. Is that a problem?</dt><dd>Not at all. Describe what you’re trying to do and we’ll suggest options.</dd></div>
+      <div class="in-faq-row"><dt>What if a model is unavailable?</dt><dd>We’ll tell you before quoting and suggest a comparable alternative.</dd></div>
+    </dl>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h" data-screen-label="Send a list" class="in-send">
+    <div style="grid-column:1 / span 5;padding-bottom:80px">
+      <h2 id="contact-h">Send a list</h2>
+      <p style="margin-top:24px;max-width:36ch;font-size:20px;line-height:30px;text-wrap:pretty">We’re registered in Hong Kong as Intere Business Development Limited and supply electronics and computer equipment to companies of all sizes.</p>
+    </div>
+    <form noValidate="{{ true }}" onSubmit="{{ submit }}" style="grid-column:7 / span 6">
+      <div class="in-sheet">
+        <div class="in-sheet-clip" aria-hidden="true"></div>
+        <div class="in-sheet-page" style="padding:44px 0 0">
+          <div class="in-row"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autoComplete="name" value="{{ name }}" onChange="{{ onName }}" aria-invalid="{{ nameInvalid }}" aria-describedby="f-name-err"></div>
+          <sc-if value="{{ nameErr }}" hint-placeholder-val="{{ false }}"><p id="f-name-err" class="in-err">{{ nameErr }}</p></sc-if>
+          <div class="in-row"><label for="f-contact">Email or phone</label><input id="f-contact" name="contact" type="text" autoComplete="email" value="{{ contact }}" onChange="{{ onContact }}" aria-invalid="{{ contactInvalid }}" aria-describedby="f-contact-err"></div>
+          <sc-if value="{{ contactErr }}" hint-placeholder-val="{{ false }}"><p id="f-contact-err" class="in-err">{{ contactErr }}</p></sc-if>
+          <label for="f-message" style="display:block;padding:28px 24px 10px;font-size:16px;line-height:22px;font-weight:600;color:#46605D">Your list, or a description of the task</label>
+          <textarea id="f-message" name="message" rows="6" value="{{ message }}" onChange="{{ onMessage }}" aria-invalid="{{ messageInvalid }}" aria-describedby="f-message-err" style="display:block;width:100%;height:266px;margin:0;padding:0 24px 0 88px;border:0;border-top:2px solid #15302F;border-radius:0;resize:vertical;font:inherit;font-size:20px;line-height:44px;color:#15302F;background-color:transparent;background-image:linear-gradient(to right, transparent 63px, #1F8A8A 63px, #1F8A8A 65px, transparent 65px), linear-gradient(to bottom, transparent 43px, #B9C6C4 43px);background-size:100% 100%, 100% 44px;background-repeat:no-repeat, repeat;background-attachment:local"></textarea>
+          <sc-if value="{{ messageErr }}" hint-placeholder-val="{{ false }}"><p id="f-message-err" class="in-err" style="margin-bottom:14px">{{ messageErr }}</p></sc-if>
+          <div class="in-live-foot" style="justify-content:space-between;align-items:center;gap:16px">
+            <div role="status" aria-live="polite"><sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}"><p style="font-size:16px;line-height:24px;font-weight:600">Sent. We’ll reply to the contact you gave.</p></sc-if></div>
+            <button type="submit" class="in-btn"><span class="in-btn-t">Send</span><span class="in-btn-a" aria-hidden="true"><span>→</span></span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer data-screen-label="Footer" style="margin:0 12px 12px;background:#15302F;color:#F2F2F0;padding:56px 64px 64px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px 64px">
+  <img src="brand/logo-light.svg" alt="INTERE" width="168" height="32" style="display:block;width:168px;height:32px">
+  <p style="font-size:16px;line-height:24px">Intere Business Development Limited, Hong Kong. <a id="privacy" href="#privacy" style="color:#F2F2F0;text-decoration-color:#1F8A8A">Privacy Policy</a>.</p>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  tagsRef = React.createRef();
+  state = { tagsOn: false, name: '', contact: '', message: '', errors: {}, sent: false };
+
+  componentDidMount() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const grid = this.tagsRef.current;
+    if (!grid || reduce || !('IntersectionObserver' in window)) this.setState({ tagsOn: true });
+    else {
+      this.tagsIO = new IntersectionObserver(([e]) => { if (e.isIntersecting) { this.setState({ tagsOn: true }); this.tagsIO.disconnect(); } }, { threshold: 0.35 });
+      this.tagsIO.observe(grid);
+    }
+  }
+  componentWillUnmount() {
+    this.tagsIO && this.tagsIO.disconnect();
+  }
+
+  check(s) {
+    const e = {};
+    if (!s.name.trim()) e.name = 'Enter your name so we know who to reply to.';
+    const c = s.contact.trim();
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c);
+    const isPhone = /^[+()\d\s.-]+$/.test(c) && c.replace(/\D/g, '').length >= 6;
+    if (!c) e.contact = 'Enter an email address or a phone number so we can reply.';
+    else if (!isEmail && !isPhone) e.contact = 'This is not a complete email address or phone number. Check it and try again.';
+    if (!s.message.trim()) e.message = 'Add your list, or describe the task, so we can reply with options.';
+    return e;
+  }
+
+  field(key, value) {
+    this.setState(s => {
+      const errors = { ...s.errors };
+      delete errors[key];
+      return { [key]: value, errors, sent: false };
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+    return {
+      tagsRef: this.tagsRef, tagsState: s.tagsOn ? 'on' : 'off',
+      name: s.name, contact: s.contact, message: s.message, sent: s.sent,
+      nameErr: s.errors.name || '', contactErr: s.errors.contact || '', messageErr: s.errors.message || '',
+      nameInvalid: !!s.errors.name, contactInvalid: !!s.errors.contact, messageInvalid: !!s.errors.message,
+      onName: e => this.field('name', e.target.value),
+      onContact: e => this.field('contact', e.target.value),
+      onMessage: e => this.field('message', e.target.value),
+      goForm: e => {
+        e.preventDefault();
+        const f = document.getElementById('contact');
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        f && f.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        const n = document.getElementById('f-name');
+        n && setTimeout(() => n.focus({ preventScroll: true }), reduce ? 0 : 600);
+      },
+      submit: e => {
+        e.preventDefault();
+        const errors = this.check(s);
+        const first = ['name', 'contact', 'message'].find(k => errors[k]);
+        if (first) {
+          this.setState({ errors, sent: false });
+          const el = document.getElementById('f-' + first);
+          el && el.focus();
+          return;
+        }
+        this.setState({ name: '', contact: '', message: '', errors: {}, sent: true });
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
